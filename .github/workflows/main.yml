@@ -45,6 +45,3 @@ jobs:
         with:
           # The HTML file you want to preview, relative to the root of the repo
           html_file: 'report.html'
-        
-      - name: show
-        run: steps.html_preview.outputs.url
