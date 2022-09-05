@@ -1,1 +1,3 @@
-# playwrigth.test.python
+'''pip install -r requirements.txt'''
+
+'''playwright install'''
