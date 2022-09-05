@@ -40,7 +40,9 @@ jobs:
       # Publish HTML report
       - uses: actions/upload-artifact@v3
         with:
-          name: my-artifact
+          name: HTML-report
           path: report.html
           
+          
+      
           
