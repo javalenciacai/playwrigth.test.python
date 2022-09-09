@@ -61,8 +61,8 @@ def test_Login(Array):
             # Expect an attribute "to be strictly equal" to the value.
             expect(CompanyName).to_have_attribute("title", Array[i]["ValidateCompanyName"]["CompanyName"]  , timeout=20000)               
 
-        img = "test/img/screenshot"+Array[i]["username"]+".png"
-        page.screenshot(path=img)
+        img = "screenshot"+Array[i]["username"]+".png"
+        page.screenshot(path="test/report/"+img)
         html = '<div><img src="%s" alt="screenshot" style="width:600px;height:228px;" ' \
                        'onclick="window.open(this.src)" align="right"/></div>'%img
 
