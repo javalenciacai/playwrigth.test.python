@@ -44,16 +44,15 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: HTML-report
-          path: |
-                test/img/
-                report.html
+          path: test/report/
                 
                 
+      # Publish HTML report as page          
       - name: "Publish test results"
         uses: peaceiris/actions-gh-pages@v3.7.3
         with: 
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: './report.html'
+          publish_dir: './test/report'
           keep_files: true
           
           
