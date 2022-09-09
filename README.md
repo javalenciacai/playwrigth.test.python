@@ -15,4 +15,4 @@ pip install pytest-xdist
 
 
 
-
+# [Report](https://javalenciacai.github.io/playwrigth.test.python/report.html)
