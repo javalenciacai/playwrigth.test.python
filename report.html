@@ -429,21 +429,24 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 09-Sep-2022 at 14:25:12 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 11-Sep-2022 at 14:38:18 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
         <td>Base URL</td>
         <td></td></tr>
       <tr>
+        <td>CI</td>
+        <td>true</td></tr>
+      <tr>
         <td>JAVA_HOME</td>
-        <td>/usr/lib/jvm/java-8-openjdk-amd64</td></tr>
+        <td>/usr/lib/jvm/temurin-11-jdk-amd64</td></tr>
       <tr>
         <td>Packages</td>
         <td>{"pluggy": "1.0.0", "py": "1.11.0", "pytest": "7.1.3"}</td></tr>
       <tr>
         <td>Platform</td>
-        <td>Linux-5.4.0-125-generic-x86_64-with-glibc2.29</td></tr>
+        <td>Linux-5.15.0-1019-azure-x86_64-with-glibc2.29</td></tr>
       <tr>
         <td>Plugins</td>
         <td>{"base-url": "2.0.0", "forked": "1.4.0", "html": "3.1.1", "metadata": "2.0.2", "playwright": "0.3.0", "xdist": "2.5.0"}</td></tr>
@@ -451,8 +454,8 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Python</td>
         <td>3.8.10</td></tr></table>
     <h2>Summary</h2>
-    <p>4 tests ran in 17.68 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">4 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>4 tests ran in 62.56 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">3 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -463,47 +466,48 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="passed results-table-row">
+      <tbody class="failed results-table-row">
         <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test/test_login.py::test_Login[Array0]</td>
-          <td class="col-duration">11.73</td>
+          <td class="col-result">Failed</td>
+          <td class="col-name">test/test_login.py::test_Login[Array3]</td>
+          <td class="col-duration">61.51</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div><div><img src="screenshotsiigo@techmf.com.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div class="log">[gw0] linux -- Python 3.8.10 /home/vale262268/Documentos/Automation/Repos/playwrigth.test.python/venv/bin/python<br/>[gw0] linux -- Python 3.8.10 /home/vale262268/Documentos/Automation/Repos/playwrigth.test.python/venv/bin/python[gw0] linux -- Python 3.8.10 /home/vale262268/Documentos/Automation/Repos/playwrigth.test.python/venv/bin/python[gw0] linux -- Python 3.8.10 /home/vale262268/Documentos/Automation/Repos/playwrigth.test.python/venv/bin/python<br/> ------------------------------Captured stdout call------------------------------ <br/>[{&#x27;url&#x27;: &#x27;https://qastaging.siigo.com/&#x27;, &#x27;username&#x27;: &#x27;siigo@techmf.com&#x27;, &#x27;ValidateCompanyName&#x27;: {&#x27;MenuNuevo&#x27;: False, &#x27;CompanyName&#x27;: &#x27;Siigo TechMF&#x27;}, &#x27;title&#x27;: &#x27;Siigo Nube&#x27;, &#x27;ValidateENV&#x27;: &#x27;qastaging&#x27;}]
+            <div></div>
+            <div></div>
+            <div class="log">[gw3] linux -- Python 3.8.10 /usr/bin/python3<br/>[gw3] linux -- Python 3.8.10 /usr/bin/python3[gw3] linux -- Python 3.8.10 /usr/bin/python3<br/><br/>Array = [{&#x27;ValidateCompanyName&#x27;: {&#x27;CompanyName&#x27;: &#x27;ALMACEN TODO EN UNO&#x27;, &#x27;MenuNuevo&#x27;: True}, &#x27;ValidateENV&#x27;: &#x27;qastaging&#x27;, &#x27;title&#x27;: &#x27;ISIIGO&#x27;, &#x27;url&#x27;: &#x27;http://qastaging.siigo.ec/&#x27;, ...}]<br/><br/>    @pytest.mark.parametrize(&quot;Array&quot;,[(QAColombia), (QAMexico), (QAChile), (QAEcuador)])<br/>    def test_Login(Array):<br/>        print(Array)<br/>        i = 0<br/>        with sync_playwright() as p:<br/>            # Make sure to run headed.<br/>            browser = p.chromium.launch(channel=&quot;chrome&quot;, headless=hideBrowser, slow_mo=0, timeout=60000)<br/>            context = browser.new_context()<br/>            page = context.new_page()<br/>            page.set_default_timeout(timeout=60000)<br/>    <br/>&gt;           page.goto(Array[i][&quot;url&quot;])<br/><br/>test/test_login.py:28: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>../../../.local/lib/python3.8/site-packages/playwright/sync_api/_generated.py:7434: in goto<br/>    self._sync(<br/>../../../.local/lib/python3.8/site-packages/playwright/_impl/_page.py:496: in goto<br/>    return await self._main_frame.goto(**locals_to_params(locals()))<br/>../../../.local/lib/python3.8/site-packages/playwright/_impl/_frame.py:136: in goto<br/>    await self._channel.send(&quot;goto&quot;, locals_to_params(locals()))<br/>../../../.local/lib/python3.8/site-packages/playwright/_impl/_connection.py:43: in send<br/>    return await self._connection.wrap_api_call(<br/>../../../.local/lib/python3.8/site-packages/playwright/_impl/_connection.py:387: in wrap_api_call<br/>    return await cb()<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;playwright._impl._connection.Channel object at 0x7f92781f11f0&gt;<br/>method = &#x27;goto&#x27;, params = {&#x27;url&#x27;: &#x27;http://qastaging.siigo.ec/&#x27;}<br/>return_as_dict = False<br/><br/>    async def inner_send(<br/>        self, method: str, params: Optional[Dict], return_as_dict: bool<br/>    ) -&gt; Any:<br/>        if params is None:<br/>            params = {}<br/>        callback = self._connection._send_message_to_server(self._guid, method, params)<br/>        if self._connection._error:<br/>            error = self._connection._error<br/>            self._connection._error = None<br/>            raise error<br/>        done, _ = await asyncio.wait(<br/>            {<br/>                self._connection._transport.on_error_future,<br/>                callback.future,<br/>            },<br/>            return_when=asyncio.FIRST_COMPLETED,<br/>        )<br/>        if not callback.future.done():<br/>            callback.future.cancel()<br/>&gt;       result = next(iter(done)).result()<br/><span class="error">E       playwright._impl._api_types.TimeoutError: Timeout 60000ms exceeded.</span><br/><span class="error">E       =========================== logs ===========================</span><br/><span class="error">E       navigating to &quot;http://qastaging.siigo.ec/&quot;, waiting until &quot;load&quot;</span><br/><span class="error">E       ============================================================</span><br/><br/>../../../.local/lib/python3.8/site-packages/playwright/_impl/_connection.py:78: TimeoutError[gw3] linux -- Python 3.8.10 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>[{&#x27;url&#x27;: &#x27;http://qastaging.siigo.ec/&#x27;, &#x27;username&#x27;: &#x27;admin@uno.com&#x27;, &#x27;ValidateCompanyName&#x27;: {&#x27;MenuNuevo&#x27;: True, &#x27;CompanyName&#x27;: &#x27;ALMACEN TODO EN UNO&#x27;}, &#x27;title&#x27;: &#x27;ISIIGO&#x27;, &#x27;ValidateENV&#x27;: &#x27;qastaging&#x27;}]
 <br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test/test_login.py::test_Login[Array1]</td>
-          <td class="col-duration">10.33</td>
+          <td class="col-duration">11.52</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div><div><img src="screenshotadmin@shura.com.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div class="log">[gw1] linux -- Python 3.8.10 /home/vale262268/Documentos/Automation/Repos/playwrigth.test.python/venv/bin/python<br/>[gw1] linux -- Python 3.8.10 /home/vale262268/Documentos/Automation/Repos/playwrigth.test.python/venv/bin/python[gw1] linux -- Python 3.8.10 /home/vale262268/Documentos/Automation/Repos/playwrigth.test.python/venv/bin/python[gw1] linux -- Python 3.8.10 /home/vale262268/Documentos/Automation/Repos/playwrigth.test.python/venv/bin/python<br/> ------------------------------Captured stdout call------------------------------ <br/>[{&#x27;url&#x27;: &#x27;http://qastaging.siigo.mx/&#x27;, &#x27;username&#x27;: &#x27;admin@shura.com&#x27;, &#x27;ValidateCompanyName&#x27;: {&#x27;MenuNuevo&#x27;: True, &#x27;CompanyName&#x27;: &#x27;Shura&#x27;}, &#x27;title&#x27;: &#x27;Siigo Nube&#x27;, &#x27;ValidateENV&#x27;: &#x27;qastaging&#x27;}]
+            <div class="log">[gw1] linux -- Python 3.8.10 /usr/bin/python3<br/>[gw1] linux -- Python 3.8.10 /usr/bin/python3[gw1] linux -- Python 3.8.10 /usr/bin/python3[gw1] linux -- Python 3.8.10 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>[{&#x27;url&#x27;: &#x27;http://qastaging.siigo.mx/&#x27;, &#x27;username&#x27;: &#x27;admin@shura.com&#x27;, &#x27;ValidateCompanyName&#x27;: {&#x27;MenuNuevo&#x27;: True, &#x27;CompanyName&#x27;: &#x27;Shura&#x27;}, &#x27;title&#x27;: &#x27;Siigo Nube&#x27;, &#x27;ValidateENV&#x27;: &#x27;qastaging&#x27;}]
 <br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">test/test_login.py::test_Login[Array3]</td>
-          <td class="col-duration">16.99</td>
+          <td class="col-name">test/test_login.py::test_Login[Array0]</td>
+          <td class="col-duration">13.74</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div><div><img src="screenshotadmin@uno.com.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div class="log">[gw3] linux -- Python 3.8.10 /home/vale262268/Documentos/Automation/Repos/playwrigth.test.python/venv/bin/python<br/>[gw3] linux -- Python 3.8.10 /home/vale262268/Documentos/Automation/Repos/playwrigth.test.python/venv/bin/python[gw3] linux -- Python 3.8.10 /home/vale262268/Documentos/Automation/Repos/playwrigth.test.python/venv/bin/python[gw3] linux -- Python 3.8.10 /home/vale262268/Documentos/Automation/Repos/playwrigth.test.python/venv/bin/python<br/> ------------------------------Captured stdout call------------------------------ <br/>[{&#x27;url&#x27;: &#x27;http://qastaging.siigo.ec/&#x27;, &#x27;username&#x27;: &#x27;admin@uno.com&#x27;, &#x27;ValidateCompanyName&#x27;: {&#x27;MenuNuevo&#x27;: True, &#x27;CompanyName&#x27;: &#x27;ALMACEN TODO EN UNO&#x27;}, &#x27;title&#x27;: &#x27;ISIIGO&#x27;, &#x27;ValidateENV&#x27;: &#x27;qastaging&#x27;}]
+            <div><div><img src="screenshotsiigo@techmf.com.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
+            <div class="log">[gw0] linux -- Python 3.8.10 /usr/bin/python3<br/>[gw0] linux -- Python 3.8.10 /usr/bin/python3[gw0] linux -- Python 3.8.10 /usr/bin/python3[gw0] linux -- Python 3.8.10 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>[{&#x27;url&#x27;: &#x27;https://qastaging.siigo.com/&#x27;, &#x27;username&#x27;: &#x27;siigo@techmf.com&#x27;, &#x27;ValidateCompanyName&#x27;: {&#x27;MenuNuevo&#x27;: False, &#x27;CompanyName&#x27;: &#x27;Siigo TechMF&#x27;}, &#x27;title&#x27;: &#x27;Siigo Nube&#x27;, &#x27;ValidateENV&#x27;: &#x27;qastaging&#x27;}]
 <br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test/test_login.py::test_Login[Array2]</td>
-          <td class="col-duration">16.29</td>
+          <td class="col-duration">15.83</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div><div><img src="screenshotadmin@eventos.com.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div class="log">[gw2] linux -- Python 3.8.10 /home/vale262268/Documentos/Automation/Repos/playwrigth.test.python/venv/bin/python<br/>[gw2] linux -- Python 3.8.10 /home/vale262268/Documentos/Automation/Repos/playwrigth.test.python/venv/bin/python[gw2] linux -- Python 3.8.10 /home/vale262268/Documentos/Automation/Repos/playwrigth.test.python/venv/bin/python[gw2] linux -- Python 3.8.10 /home/vale262268/Documentos/Automation/Repos/playwrigth.test.python/venv/bin/python<br/> ------------------------------Captured stdout call------------------------------ <br/>[{&#x27;url&#x27;: &#x27;http://qastaging.siigo.cl/&#x27;, &#x27;username&#x27;: &#x27;admin@eventos.com&#x27;, &#x27;ValidateCompanyName&#x27;: {&#x27;MenuNuevo&#x27;: True, &#x27;CompanyName&#x27;: &#x27;EVENTOS EN LA NUBE&#x27;}, &#x27;title&#x27;: &#x27;Siigo Nube&#x27;, &#x27;ValidateENV&#x27;: &#x27;qastaging&#x27;}]
+            <div class="log">[gw2] linux -- Python 3.8.10 /usr/bin/python3<br/>[gw2] linux -- Python 3.8.10 /usr/bin/python3[gw2] linux -- Python 3.8.10 /usr/bin/python3[gw2] linux -- Python 3.8.10 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>[{&#x27;url&#x27;: &#x27;http://qastaging.siigo.cl/&#x27;, &#x27;username&#x27;: &#x27;admin@eventos.com&#x27;, &#x27;ValidateCompanyName&#x27;: {&#x27;MenuNuevo&#x27;: True, &#x27;CompanyName&#x27;: &#x27;EVENTOS EN LA NUBE&#x27;}, &#x27;title&#x27;: &#x27;Siigo Nube&#x27;, &#x27;ValidateENV&#x27;: &#x27;qastaging&#x27;}]
 <br/></div></td></tr></tbody></table></body></html>
