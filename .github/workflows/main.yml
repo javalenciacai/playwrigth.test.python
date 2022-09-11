@@ -42,6 +42,7 @@ jobs:
         
       # Publish HTML report
       - uses: actions/upload-artifact@v3
+        if: ${{ always() }}
         with:
           name: HTML-report
           path: test/report/
