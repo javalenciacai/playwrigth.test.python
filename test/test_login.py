@@ -2,6 +2,8 @@ import re
 import pytest
 from playwright.sync_api import expect, sync_playwright
 import conftest
+from navigator import Navigator
+from baseTest import BaseTest
 
 title = "ISIIGO"
 titleQA = "Siigo Nube"
@@ -21,11 +23,8 @@ def test_Login(Array):
     with sync_playwright() as p:
         # Make sure to run headed.
         browser = p.chromium.launch(channel="chrome", headless=hideBrowser, slow_mo=0, timeout=60000)
-        context = browser.new_context()
-        page = context.new_page()  
-        page.set_default_timeout(timeout=60000)
-
-        page.goto(Array[i]["url"])
+        page = BaseTest.context(browser)
+        Navigator.navigate(page, Array[i]["url"])
     
 
         # Expect a title "to contain" a substring.
@@ -66,7 +65,4 @@ def test_Login(Array):
         html = '<div><img src="%s" alt="screenshot" style="width:600px;height:228px;" ' \
                        'onclick="window.open(this.src)" align="right"/></div>'%img
 
-        conftest.html = html       
-                
-
-            
+        conftest.htmlImg = html
