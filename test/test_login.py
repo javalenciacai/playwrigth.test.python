@@ -2,7 +2,6 @@ import re
 import pytest
 from playwright.sync_api import expect, sync_playwright
 import conftest
-from navigator import Navigator
 from baseTest import BaseTest
 
 title = "ISIIGO"
@@ -18,17 +17,19 @@ Canary = [{"url":"https://siigonube.siigo.com/", "username":"calidad_nube@piloto
 
 @pytest.mark.parametrize("Array",[(QAColombia), (QAMexico), (QAChile), (QAEcuador)])
 def test_Login(Array):
-    print(Array)
+    print(Array)    
     i = 0
+    conftest.name = Array[i]["username"]
     with sync_playwright() as p:
         # Make sure to run headed.
         browser = p.chromium.launch(channel="chrome", headless=hideBrowser, slow_mo=0, timeout=60000)
-        page = BaseTest.context(browser)
-        Navigator.navigate(page, Array[i]["url"])
+        page = BaseTest(browser)
+        conftest.page = page
+        page.navigate(Array[i]["url"])
     
 
         # Expect a title "to contain" a substring.
-        expect(page).to_have_title(re.compile(Array[i]["title"]))
+        page.expectOfPage(re.compile(Array[i]["title"]))
         # create a locator
         txtUserName = page.locator("input[name=\"ctl14\\$txtUserName\"]")
         txtPassword = page.locator("input[name=\"ctl14\\$txtPassword\"]")
@@ -47,10 +48,9 @@ def test_Login(Array):
         Ingresar.click()
 
         # Expects the URL to contain intro.
-        expect(page).to_have_url(re.compile(".*" + Array[i]["ValidateENV"] + ""))
+        page.expectOfUrl(re.compile(".*" + Array[i]["ValidateENV"] + ""))
 
-
-        # Click #HeaderCompanyName
+        # Validate #HeaderCompanyName
         
         if (Array[i]["ValidateCompanyName"]["MenuNuevo"]): 
             CompanyName = page.locator('fragment >> text='+Array[i]["ValidateCompanyName"]["CompanyName"]+'')   
@@ -60,9 +60,6 @@ def test_Login(Array):
             # Expect an attribute "to be strictly equal" to the value.
             expect(CompanyName).to_have_attribute("title", Array[i]["ValidateCompanyName"]["CompanyName"]  , timeout=20000)               
 
-        img = "screenshot"+Array[i]["username"]+".png"
-        page.screenshot(path="test/report/"+img)
-        html = '<div><img src="%s" alt="screenshot" style="width:600px;height:228px;" ' \
-                       'onclick="window.open(this.src)" align="right"/></div>'%img
-
-        conftest.htmlImg = html
+        conftest.htmlImg = page.screenshot(Array[i]["username"])
+        page.contextClose()
+        conftest.htmlVideo = page.video()
