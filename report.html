@@ -429,7 +429,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 18-Sep-2022 at 21:16:02 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 19-Sep-2022 at 08:41:54 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -454,8 +454,8 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Python</td>
         <td>3.8.10</td></tr></table>
     <h2>Summary</h2>
-    <p>4 tests ran in 68.09 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">3 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>4 tests ran in 22.62 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">4 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -466,51 +466,51 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="failed results-table-row">
+      <tbody class="passed results-table-row">
         <tr>
-          <td class="col-result">Failed</td>
+          <td class="col-result">Passed</td>
           <td class="col-name">test/test_login.py::test_Login[Array3]</td>
-          <td class="col-duration">66.87</td>
+          <td class="col-duration">21.32</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div></div>
-            <div></div>
-            <div class="log">[gw2] linux -- Python 3.8.10 /usr/bin/python3<br/>[gw2] linux -- Python 3.8.10 /usr/bin/python3[gw2] linux -- Python 3.8.10 /usr/bin/python3<br/><br/>Array = [{&#x27;ValidateCompanyName&#x27;: {&#x27;CompanyName&#x27;: &#x27;ALMACEN TODO EN UNO&#x27;, &#x27;MenuNuevo&#x27;: True}, &#x27;ValidateENV&#x27;: &#x27;qastaging&#x27;, &#x27;title&#x27;: &#x27;ISIIGO&#x27;, &#x27;url&#x27;: &#x27;http://qastaging.siigo.ec/&#x27;, ...}]<br/><br/>    @pytest.mark.parametrize(&quot;Array&quot;,[(QAColombia), (QAMexico), (QAChile), (QAEcuador)])<br/>    def test_Login(Array):<br/>        print(Array)<br/>        i = 0<br/>        conftest.name = Array[i][&quot;username&quot;]<br/>        with sync_playwright() as p:<br/>            # Make sure to run headed.<br/>            browser = p.chromium.launch(channel=&quot;chrome&quot;, headless=hideBrowser, slow_mo=0, timeout=60000)<br/>            page = BaseTest(browser)<br/>            conftest.page = page<br/>&gt;           page.navigate(Array[i][&quot;url&quot;])<br/><br/>test/test_login.py:28: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>test/baseTest.py:14: in navigate<br/>    return self.page.goto(url)<br/>../../../.local/lib/python3.8/site-packages/playwright/sync_api/_generated.py:7434: in goto<br/>    self._sync(<br/>../../../.local/lib/python3.8/site-packages/playwright/_impl/_page.py:496: in goto<br/>    return await self._main_frame.goto(**locals_to_params(locals()))<br/>../../../.local/lib/python3.8/site-packages/playwright/_impl/_frame.py:136: in goto<br/>    await self._channel.send(&quot;goto&quot;, locals_to_params(locals()))<br/>../../../.local/lib/python3.8/site-packages/playwright/_impl/_connection.py:43: in send<br/>    return await self._connection.wrap_api_call(<br/>../../../.local/lib/python3.8/site-packages/playwright/_impl/_connection.py:387: in wrap_api_call<br/>    return await cb()<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;playwright._impl._connection.Channel object at 0x7ff8f095c910&gt;<br/>method = &#x27;goto&#x27;, params = {&#x27;url&#x27;: &#x27;http://qastaging.siigo.ec/&#x27;}<br/>return_as_dict = False<br/><br/>    async def inner_send(<br/>        self, method: str, params: Optional[Dict], return_as_dict: bool<br/>    ) -&gt; Any:<br/>        if params is None:<br/>            params = {}<br/>        callback = self._connection._send_message_to_server(self._guid, method, params)<br/>        if self._connection._error:<br/>            error = self._connection._error<br/>            self._connection._error = None<br/>            raise error<br/>        done, _ = await asyncio.wait(<br/>            {<br/>                self._connection._transport.on_error_future,<br/>                callback.future,<br/>            },<br/>            return_when=asyncio.FIRST_COMPLETED,<br/>        )<br/>        if not callback.future.done():<br/>            callback.future.cancel()<br/>&gt;       result = next(iter(done)).result()<br/><span class="error">E       playwright._impl._api_types.TimeoutError: Timeout 60000ms exceeded.</span><br/><span class="error">E       =========================== logs ===========================</span><br/><span class="error">E       navigating to &quot;http://qastaging.siigo.ec/&quot;, waiting until &quot;load&quot;</span><br/><span class="error">E       ============================================================</span><br/><br/>../../../.local/lib/python3.8/site-packages/playwright/_impl/_connection.py:78: TimeoutError[gw2] linux -- Python 3.8.10 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>[{&#x27;url&#x27;: &#x27;http://qastaging.siigo.ec/&#x27;, &#x27;username&#x27;: &#x27;admin@uno.com&#x27;, &#x27;ValidateCompanyName&#x27;: {&#x27;MenuNuevo&#x27;: True, &#x27;CompanyName&#x27;: &#x27;ALMACEN TODO EN UNO&#x27;}, &#x27;title&#x27;: &#x27;ISIIGO&#x27;, &#x27;ValidateENV&#x27;: &#x27;qastaging&#x27;}]
+            <div><div><img src="screenshotadmin@uno.com.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
+            <div><div><video src="videos/f14fa3378faea156a1a7456920272f9c.webm" poster="presentacion.jpg" controls></video></div></div>
+            <div class="log">[gw3] linux -- Python 3.8.10 /usr/bin/python3<br/>[gw3] linux -- Python 3.8.10 /usr/bin/python3[gw3] linux -- Python 3.8.10 /usr/bin/python3[gw3] linux -- Python 3.8.10 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>[{&#x27;url&#x27;: &#x27;http://qastaging.siigo.ec/&#x27;, &#x27;username&#x27;: &#x27;admin@uno.com&#x27;, &#x27;ValidateCompanyName&#x27;: {&#x27;MenuNuevo&#x27;: True, &#x27;CompanyName&#x27;: &#x27;ALMACEN TODO EN UNO&#x27;}, &#x27;title&#x27;: &#x27;ISIIGO&#x27;, &#x27;ValidateENV&#x27;: &#x27;qastaging&#x27;}]
 <br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test/test_login.py::test_Login[Array0]</td>
-          <td class="col-duration">23.53</td>
+          <td class="col-duration">21.66</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div><div><img src="screenshotsiigo@techmf.com.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div><div><video src="videos/0bccaa4c6a2e2e4ee4f819210f3bbe3a.webm" poster="presentacion.jpg" controls></video></div></div>
+            <div><div><video src="videos/f1191e74b2c89f717172fa81a28d3f6e.webm" poster="presentacion.jpg" controls></video></div></div>
             <div class="log">[gw0] linux -- Python 3.8.10 /usr/bin/python3<br/>[gw0] linux -- Python 3.8.10 /usr/bin/python3[gw0] linux -- Python 3.8.10 /usr/bin/python3[gw0] linux -- Python 3.8.10 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>[{&#x27;url&#x27;: &#x27;https://qastaging.siigo.com/&#x27;, &#x27;username&#x27;: &#x27;siigo@techmf.com&#x27;, &#x27;ValidateCompanyName&#x27;: {&#x27;MenuNuevo&#x27;: False, &#x27;CompanyName&#x27;: &#x27;Siigo TechMF&#x27;}, &#x27;title&#x27;: &#x27;Siigo Nube&#x27;, &#x27;ValidateENV&#x27;: &#x27;qastaging&#x27;}]
 <br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test/test_login.py::test_Login[Array1]</td>
-          <td class="col-duration">23.54</td>
+          <td class="col-duration">21.43</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div><div><img src="screenshotadmin@shura.com.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div><div><video src="videos/ce88496fc1644edeaf4b487ba70570ea.webm" poster="presentacion.jpg" controls></video></div></div>
+            <div><div><video src="videos/4b4d0f27cb59dde3a070dd8cdfd38c4d.webm" poster="presentacion.jpg" controls></video></div></div>
             <div class="log">[gw1] linux -- Python 3.8.10 /usr/bin/python3<br/>[gw1] linux -- Python 3.8.10 /usr/bin/python3[gw1] linux -- Python 3.8.10 /usr/bin/python3[gw1] linux -- Python 3.8.10 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>[{&#x27;url&#x27;: &#x27;http://qastaging.siigo.mx/&#x27;, &#x27;username&#x27;: &#x27;admin@shura.com&#x27;, &#x27;ValidateCompanyName&#x27;: {&#x27;MenuNuevo&#x27;: True, &#x27;CompanyName&#x27;: &#x27;Shura&#x27;}, &#x27;title&#x27;: &#x27;Siigo Nube&#x27;, &#x27;ValidateENV&#x27;: &#x27;qastaging&#x27;}]
 <br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test/test_login.py::test_Login[Array2]</td>
-          <td class="col-duration">23.68</td>
+          <td class="col-duration">21.47</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div><div><img src="screenshotadmin@eventos.com.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div><div><video src="videos/753962025b6bc57e45b69725fb2c653f.webm" poster="presentacion.jpg" controls></video></div></div>
-            <div class="log">[gw3] linux -- Python 3.8.10 /usr/bin/python3<br/>[gw3] linux -- Python 3.8.10 /usr/bin/python3[gw3] linux -- Python 3.8.10 /usr/bin/python3[gw3] linux -- Python 3.8.10 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>[{&#x27;url&#x27;: &#x27;http://qastaging.siigo.cl/&#x27;, &#x27;username&#x27;: &#x27;admin@eventos.com&#x27;, &#x27;ValidateCompanyName&#x27;: {&#x27;MenuNuevo&#x27;: True, &#x27;CompanyName&#x27;: &#x27;EVENTOS EN LA NUBE&#x27;}, &#x27;title&#x27;: &#x27;Siigo Nube&#x27;, &#x27;ValidateENV&#x27;: &#x27;qastaging&#x27;}]
+            <div><div><video src="videos/0cae3378251f33a98dbd56a5ed6d9b6d.webm" poster="presentacion.jpg" controls></video></div></div>
+            <div class="log">[gw2] linux -- Python 3.8.10 /usr/bin/python3<br/>[gw2] linux -- Python 3.8.10 /usr/bin/python3[gw2] linux -- Python 3.8.10 /usr/bin/python3[gw2] linux -- Python 3.8.10 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>[{&#x27;url&#x27;: &#x27;http://qastaging.siigo.cl/&#x27;, &#x27;username&#x27;: &#x27;admin@eventos.com&#x27;, &#x27;ValidateCompanyName&#x27;: {&#x27;MenuNuevo&#x27;: True, &#x27;CompanyName&#x27;: &#x27;EVENTOS EN LA NUBE&#x27;}, &#x27;title&#x27;: &#x27;Siigo Nube&#x27;, &#x27;ValidateENV&#x27;: &#x27;qastaging&#x27;}]
 <br/></div></td></tr></tbody></table></body></html>
