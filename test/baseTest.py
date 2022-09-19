@@ -36,5 +36,6 @@ class BaseTest:
 
     def video(self):
         path = self.page.video.path()
-        htmlVideo = '<div><video src="../../%s" poster="presentacion.jpg" controls></video></div>'%path
+        path = path.replace("test/report/videos", "videos")
+        htmlVideo = '<div><video src="%s" poster="presentacion.jpg" controls></video></div>'%path
         return htmlVideo
