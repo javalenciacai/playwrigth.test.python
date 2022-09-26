@@ -40,7 +40,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: pytest --html=test/report/report.html --self-contained-html -n 4
+        run: pytest --html=test/report/report.html --self-contained-html --numprocesses auto
         
       # Publish HTML report
       - uses: actions/upload-artifact@v3
