@@ -429,7 +429,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 06-Oct-2022 at 13:58:28 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 07-Oct-2022 at 07:05:48 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -454,8 +454,8 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Python</td>
         <td>3.8.10</td></tr></table>
     <h2>Summary</h2>
-    <p>4 tests ran in 86.73 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">4 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>4 tests ran in 139.55 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">3 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -466,51 +466,51 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="passed results-table-row">
+      <tbody class="failed results-table-row">
         <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test/test_login.py::TestClass::test_Login[testdata1]</td>
-          <td class="col-duration">72.20</td>
+          <td class="col-result">Failed</td>
+          <td class="col-name">test/test_login.py::TestClass::test_Login[testdata3]</td>
+          <td class="col-duration">115.26</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div><div><img src="screenshotadmin@shura.com.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div><div><video src="videos/bdf05d3531b9c41702ff5840ca5c465d.webm" poster="presentacion.jpg" controls></video></div></div>
+            <div><div><video src="videos/de1ef5e220e0ba3cad9da3c57fc9805e.webm" poster="presentacion.jpg" controls></video></div></div>
+            <div class="log">[gw1] linux -- Python 3.8.10 /usr/bin/python3<br/>[gw1] linux -- Python 3.8.10 /usr/bin/python3[gw1] linux -- Python 3.8.10 /usr/bin/python3<br/><br/>self = &lt;test_login.TestClass object at 0x7f9541d08370&gt;<br/>testdata = [{&#x27;ValidateCompanyName&#x27;: {&#x27;CompanyName&#x27;: &#x27;ALMACEN TODO EN UNO&#x27;, &#x27;MenuNuevo&#x27;: True}, &#x27;ValidateENV&#x27;: &#x27;qastaging&#x27;, &#x27;title&#x27;: &#x27;ISIIGO&#x27;, &#x27;url&#x27;: &#x27;http://qastaging.siigo.ec/&#x27;, ...}]<br/><br/>    @pytest.mark.parametrize(&quot;testdata&quot;,[(QAColombia), (QAMexico), (QAChile), (QAEcuador)])<br/>    def test_Login(self, testdata):<br/>        print(testdata)<br/>        hideBrowser = True<br/>        i = 0<br/>        conftest.name = testdata[i][&quot;username&quot;]<br/>        with sync_playwright() as p:<br/>            # Make sure to run headed.<br/>            browser = p.chromium.launch(channel=&quot;chrome&quot;, headless=hideBrowser, slow_mo=0, timeout=60000)<br/>            page = BaseTest(browser)<br/>            page.navigate(testdata[i][&quot;url&quot;])<br/>    <br/>    <br/>            # Expect a title &quot;to contain&quot; a substring.<br/>            page.expectOfPage(re.compile(testdata[i][&quot;title&quot;]))<br/>            # create a locator<br/>            txtUserName = page.locator(&quot;input[name=\&quot;ctl14\\$txtUserName\&quot;]&quot;)<br/>            txtPassword = page.locator(&quot;input[name=\&quot;ctl14\\$txtPassword\&quot;]&quot;)<br/>            Ingresar = page.locator(&quot;input:has-text(\&quot;Ingresar\&quot;)&quot;)<br/>    <br/>            # Input username<br/>            txtUserName.fill(testdata[i][&quot;username&quot;])<br/>    <br/>            # Input password<br/>            txtPassword.fill(&quot;1111&quot;)<br/>    <br/>            # Expect an attribute &quot;to be strictly equal&quot; to the value.<br/>            expect(Ingresar).to_have_attribute(&quot;value&quot;, &quot;Ingresar&quot;)<br/>    <br/>            # Click the get started link.<br/>            Ingresar.click()<br/>    <br/>            # Expects the URL to contain intro.<br/>            page.expectOfUrl(re.compile(&quot;.*&quot; + testdata[i][&quot;ValidateENV&quot;] + &quot;&quot;))<br/>    <br/>            # Validate #HeaderCompanyName<br/>    <br/>            if (testdata[i][&quot;ValidateCompanyName&quot;][&quot;MenuNuevo&quot;]):<br/>                CompanyName = page.locator(&#x27;fragment &gt;&gt; text=&#x27;+testdata[i][&quot;ValidateCompanyName&quot;][&quot;CompanyName&quot;]+&#x27;&#x27;)<br/>&gt;               expect(CompanyName).to_be_visible(timeout=60000)<br/><span class="error">E               AssertionError: Locator expected to be visible</span><br/><span class="error">E               Actual value: None </span><br/><span class="error">E               Call log:</span><br/><span class="error">E               LocatorAssertions.to_be_visible with timeout 60000ms</span><br/><span class="error">E               waiting for selector &quot;fragment &gt;&gt; text=ALMACEN TODO EN UNO&quot;</span><br/><br/>test/test_login.py:59: AssertionError[gw1] linux -- Python 3.8.10 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>[{&#x27;url&#x27;: &#x27;http://qastaging.siigo.ec/&#x27;, &#x27;username&#x27;: &#x27;admin@uno.com&#x27;, &#x27;ValidateCompanyName&#x27;: {&#x27;MenuNuevo&#x27;: True, &#x27;CompanyName&#x27;: &#x27;ALMACEN TODO EN UNO&#x27;}, &#x27;title&#x27;: &#x27;ISIIGO&#x27;, &#x27;ValidateENV&#x27;: &#x27;qastaging&#x27;}]
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test/test_login.py::TestClass::test_Login[testdata1]</td>
+          <td class="col-duration">23.75</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div><div><img src="screenshotadmin@shura.com.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
+            <div><div><video src="videos/de1ef5e220e0ba3cad9da3c57fc9805e.webm" poster="presentacion.jpg" controls></video></div></div>
             <div class="log">[gw1] linux -- Python 3.8.10 /usr/bin/python3<br/>[gw1] linux -- Python 3.8.10 /usr/bin/python3[gw1] linux -- Python 3.8.10 /usr/bin/python3[gw1] linux -- Python 3.8.10 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>[{&#x27;url&#x27;: &#x27;http://qastaging.siigo.mx/&#x27;, &#x27;username&#x27;: &#x27;admin@shura.com&#x27;, &#x27;ValidateCompanyName&#x27;: {&#x27;MenuNuevo&#x27;: True, &#x27;CompanyName&#x27;: &#x27;Shura&#x27;}, &#x27;title&#x27;: &#x27;Siigo Nube&#x27;, &#x27;ValidateENV&#x27;: &#x27;qastaging&#x27;}]
 <br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test/test_login.py::TestClass::test_Login[testdata0]</td>
-          <td class="col-duration">17.33</td>
+          <td class="col-duration">15.25</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div><div><img src="screenshotsiigo@techmf.com.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div><div><video src="videos/f99b76824535899ce5c4c09ad81e96e7.webm" poster="presentacion.jpg" controls></video></div></div>
+            <div><div><video src="videos/3696dd0abd6ec5d50560d68326a2f5d3.webm" poster="presentacion.jpg" controls></video></div></div>
             <div class="log">[gw0] linux -- Python 3.8.10 /usr/bin/python3<br/>[gw0] linux -- Python 3.8.10 /usr/bin/python3[gw0] linux -- Python 3.8.10 /usr/bin/python3[gw0] linux -- Python 3.8.10 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>[{&#x27;url&#x27;: &#x27;https://qastaging.siigo.com/&#x27;, &#x27;username&#x27;: &#x27;siigo@techmf.com&#x27;, &#x27;ValidateCompanyName&#x27;: {&#x27;MenuNuevo&#x27;: False, &#x27;CompanyName&#x27;: &#x27;Siigo TechMF&#x27;}, &#x27;title&#x27;: &#x27;Siigo Nube&#x27;, &#x27;ValidateENV&#x27;: &#x27;qastaging&#x27;}]
 <br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test/test_login.py::TestClass::test_Login[testdata2]</td>
-          <td class="col-duration">6.89</td>
+          <td class="col-duration">25.14</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div><div><img src="screenshotadmin@eventos.com.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div><div><video src="videos/3e23715796e21256132b9361579eb664.webm" poster="presentacion.jpg" controls></video></div></div>
+            <div><div><video src="videos/bc77d9861cd04b6af77f864e35603961.webm" poster="presentacion.jpg" controls></video></div></div>
             <div class="log">[gw0] linux -- Python 3.8.10 /usr/bin/python3<br/>[gw0] linux -- Python 3.8.10 /usr/bin/python3[gw0] linux -- Python 3.8.10 /usr/bin/python3[gw0] linux -- Python 3.8.10 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>[{&#x27;url&#x27;: &#x27;http://qastaging.siigo.cl/&#x27;, &#x27;username&#x27;: &#x27;admin@eventos.com&#x27;, &#x27;ValidateCompanyName&#x27;: {&#x27;MenuNuevo&#x27;: True, &#x27;CompanyName&#x27;: &#x27;EVENTOS EN LA NUBE&#x27;}, &#x27;title&#x27;: &#x27;Siigo Nube&#x27;, &#x27;ValidateENV&#x27;: &#x27;qastaging&#x27;}]
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test/test_login.py::TestClass::test_Login[testdata3]</td>
-          <td class="col-duration">13.94</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div><div><img src="screenshotadmin@uno.com.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div><div><video src="videos/a3dd4f27dd4a936836224ad3f8b98bde.webm" poster="presentacion.jpg" controls></video></div></div>
-            <div class="log">[gw1] linux -- Python 3.8.10 /usr/bin/python3<br/>[gw1] linux -- Python 3.8.10 /usr/bin/python3[gw1] linux -- Python 3.8.10 /usr/bin/python3[gw1] linux -- Python 3.8.10 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>[{&#x27;url&#x27;: &#x27;http://qastaging.siigo.ec/&#x27;, &#x27;username&#x27;: &#x27;admin@uno.com&#x27;, &#x27;ValidateCompanyName&#x27;: {&#x27;MenuNuevo&#x27;: True, &#x27;CompanyName&#x27;: &#x27;ALMACEN TODO EN UNO&#x27;}, &#x27;title&#x27;: &#x27;ISIIGO&#x27;, &#x27;ValidateENV&#x27;: &#x27;qastaging&#x27;}]
 <br/></div></td></tr></tbody></table></body></html>
