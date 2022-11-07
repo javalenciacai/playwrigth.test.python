@@ -439,7 +439,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 07-Nov-2022 at 13:18:27 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 07-Nov-2022 at 13:20:06 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -464,8 +464,8 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Python</td>
         <td>3.8.10</td></tr></table>
     <h2>Summary</h2>
-    <p>4 tests ran in 79.25 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">3 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>1 tests ran in 74.11 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -480,53 +480,11 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Failed</td>
           <td class="col-name">test/test_login.py::TestLogin::test_login_front_manager[testdata0]</td>
-          <td class="col-duration">78.12</td>
+          <td class="col-duration">72.93</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div></div>
-            <div><div><video src="videos/e22baff648ef8e9e08e12fe2ff6ef456.webm" poster="presentation.jpg" controls></video></div></div>
-            <div class="log">[gw3] linux -- Python 3.8.10 /usr/bin/python3<br/>[gw3] linux -- Python 3.8.10 /usr/bin/python3[gw3] linux -- Python 3.8.10 /usr/bin/python3<br/><br/>self = &lt;test_login.TestLogin object at 0x7f33f861ceb0&gt;<br/>page = &lt;Page url=&#x27;https://qastaging.siigo.mx/login&#x27;&gt;<br/>testdata = [{&#x27;ValidateCompanyName&#x27;: {&#x27;CompanyName&#x27;: &#x27;Shura&#x27;, &#x27;MenuNuevo&#x27;: True}, &#x27;ValidateENV&#x27;: &#x27;qastaging&#x27;, &#x27;title&#x27;: &#x27;Siigo Nube&#x27;, &#x27;url&#x27;: &#x27;http://qastaging.siigo.mx/&#x27;, ...}]<br/><br/>    @pytest.mark.parametrize(&quot;testdata&quot;, [(DataLogin.qa_mexico)])<br/>    def test_login_front_manager(self, page: Page, testdata) -&gt; None:<br/>        i = 0<br/>        GeneralSteps.start_navigate(page,testdata[i][&quot;url&quot;], testdata[i][&quot;title&quot;])<br/>        LoginSteps.login_from_manager(page, testdata[i][&quot;username&quot;], &quot;1111&quot;)<br/>        LoginSteps.validate_company_on_update(page)<br/>        LoginSteps.validate_correct_environment(page, testdata[i][&quot;ValidateENV&quot;])<br/>&gt;       LoginSteps.validate_company_name(page,testdata[i][&quot;ValidateCompanyName&quot;][&quot;MenuNuevo&quot;], testdata[i][&quot;ValidateCompanyName&quot;][&quot;CompanyName&quot;])<br/><br/>test/test_login.py:37: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>test/steps/login_steps.py:63: in validate_company_name<br/>    BaseTest.expect_if_be_visible(self, locator_company_name_new_menu)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;Page url=&#x27;https://qastaging.siigo.mx/login&#x27;&gt;<br/>locator = &lt;Locator frame=&lt;Frame name= url=&#x27;https://qastaging.siigo.mx/login&#x27;&gt; selector=&#x27;fragment &gt;&gt; text=Shura&#x27;&gt;<br/><br/>    def expect_if_be_visible(self, locator):<br/>        &#x27;&#x27;&#x27;Expect an Element if Visible&#x27;&#x27;&#x27;<br/>&gt;       expect(locator).to_be_visible(timeout=60000)<br/><span class="error">E       AssertionError: Locator expected to be visible</span><br/><span class="error">E       Actual value: None </span><br/><span class="error">E       Call log:</span><br/><span class="error">E       LocatorAssertions.to_be_visible with timeout 60000ms</span><br/><span class="error">E       waiting for selector &quot;fragment &gt;&gt; text=Shura&quot;</span><br/><br/>test/base_test.py:49: AssertionError[gw3] linux -- Python 3.8.10 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>Elemento //*[@id=&#x27;reloadPage&#x27;] NO es visible
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test/test_login.py::TestLogin::test_login[testdata2]</td>
-          <td class="col-duration">19.99</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div><div><img src="screenshot07-11-2022_13-17-27-811869.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div><div><video src="videos/6fbce450af7f435a692709b5a678ec7d.webm" poster="presentation.jpg" controls></video></div></div>
-            <div class="log">[gw2] linux -- Python 3.8.10 /usr/bin/python3<br/>[gw2] linux -- Python 3.8.10 /usr/bin/python3[gw2] linux -- Python 3.8.10 /usr/bin/python3[gw2] linux -- Python 3.8.10 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>http://qastaging.siigo.ec/
-admin@uno.com
-Elemento //*[@id=&#x27;reloadPage&#x27;] NO es visible
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test/test_login.py::TestLogin::test_login[testdata0]</td>
-          <td class="col-duration">19.57</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div><div><img src="screenshot07-11-2022_13-17-26-973874.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div><div><video src="videos/5eaf95eec691fe4da49f16ad855b071b.webm" poster="presentation.jpg" controls></video></div></div>
-            <div class="log">[gw0] linux -- Python 3.8.10 /usr/bin/python3<br/>[gw0] linux -- Python 3.8.10 /usr/bin/python3[gw0] linux -- Python 3.8.10 /usr/bin/python3[gw0] linux -- Python 3.8.10 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>https://qastaging.siigo.com/
-siigo@techmf.com
-Elemento //*[@id=&#x27;reloadPage&#x27;] NO es visible
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test/test_login.py::TestLogin::test_login[testdata1]</td>
-          <td class="col-duration">19.46</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div><div><img src="screenshot07-11-2022_13-17-26-410284.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div><div><video src="videos/f504472d2fe7dff35fd3947a80cd62fe.webm" poster="presentation.jpg" controls></video></div></div>
-            <div class="log">[gw1] linux -- Python 3.8.10 /usr/bin/python3<br/>[gw1] linux -- Python 3.8.10 /usr/bin/python3[gw1] linux -- Python 3.8.10 /usr/bin/python3[gw1] linux -- Python 3.8.10 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>http://qastaging.siigo.cl/
-admin@eventos.com
-Elemento //*[@id=&#x27;reloadPage&#x27;] NO es visible
+            <div><div><video src="videos/db4a4d833de0efdfaecaef14d78ce30f.webm" poster="presentation.jpg" controls></video></div></div>
+            <div class="log">[gw0] linux -- Python 3.8.10 /usr/bin/python3<br/>[gw0] linux -- Python 3.8.10 /usr/bin/python3[gw0] linux -- Python 3.8.10 /usr/bin/python3<br/><br/>self = &lt;test_login.TestLogin object at 0x7f94b56283a0&gt;<br/>page = &lt;Page url=&#x27;https://qastaging.siigo.mx/login&#x27;&gt;<br/>testdata = [{&#x27;ValidateCompanyName&#x27;: {&#x27;CompanyName&#x27;: &#x27;Shura&#x27;, &#x27;MenuNuevo&#x27;: True}, &#x27;ValidateENV&#x27;: &#x27;qastaging&#x27;, &#x27;title&#x27;: &#x27;Siigo Nube&#x27;, &#x27;url&#x27;: &#x27;http://qastaging.siigo.mx/&#x27;, ...}]<br/><br/>    @pytest.mark.parametrize(&quot;testdata&quot;, [(DataLogin.qa_mexico)])<br/>    def test_login_front_manager(self, page: Page, testdata) -&gt; None:<br/>        i = 0<br/>        GeneralSteps.start_navigate(page,testdata[i][&quot;url&quot;], testdata[i][&quot;title&quot;])<br/>        LoginSteps.login_from_manager(page, testdata[i][&quot;username&quot;], &quot;1111&quot;)<br/>        LoginSteps.validate_company_on_update(page)<br/>        LoginSteps.validate_correct_environment(page, testdata[i][&quot;ValidateENV&quot;])<br/>&gt;       LoginSteps.validate_company_name(page,testdata[i][&quot;ValidateCompanyName&quot;][&quot;MenuNuevo&quot;], testdata[i][&quot;ValidateCompanyName&quot;][&quot;CompanyName&quot;])<br/><br/>test/test_login.py:37: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>test/steps/login_steps.py:63: in validate_company_name<br/>    BaseTest.expect_if_be_visible(self, locator_company_name_new_menu)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;Page url=&#x27;https://qastaging.siigo.mx/login&#x27;&gt;<br/>locator = &lt;Locator frame=&lt;Frame name= url=&#x27;https://qastaging.siigo.mx/login&#x27;&gt; selector=&#x27;fragment &gt;&gt; text=Shura&#x27;&gt;<br/><br/>    def expect_if_be_visible(self, locator):<br/>        &#x27;&#x27;&#x27;Expect an Element if Visible&#x27;&#x27;&#x27;<br/>&gt;       expect(locator).to_be_visible(timeout=60000)<br/><span class="error">E       AssertionError: Locator expected to be visible</span><br/><span class="error">E       Actual value: None </span><br/><span class="error">E       Call log:</span><br/><span class="error">E       LocatorAssertions.to_be_visible with timeout 60000ms</span><br/><span class="error">E       waiting for selector &quot;fragment &gt;&gt; text=Shura&quot;</span><br/><br/>test/base_test.py:49: AssertionError[gw0] linux -- Python 3.8.10 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>Elemento //*[@id=&#x27;reloadPage&#x27;] NO es visible
 <br/></div></td></tr></tbody></table></body></html>
