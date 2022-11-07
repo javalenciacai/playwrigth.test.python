@@ -15,6 +15,17 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+    inputs:
+      tests:
+        description: 'Test Name'
+        required: true
+        default: 'test_login' 
+        type: choice
+        options:
+        - test_login
+        - test_login_front_manager
+        - test_ 
+
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -40,7 +51,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: pytest --html=test/report/report.html --self-contained-html --numprocesses 4 -k "test_login"
+        run: pytest --html=test/report/report.html --self-contained-html --numprocesses 4 -k "${{ inputs.tests }}"
         
       # Publish HTML report
       - uses: actions/upload-artifact@v3
