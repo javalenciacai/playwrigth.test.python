@@ -1,0 +1,4 @@
+archive/
+__pycache__/
+pytest_html_report.html
+.idea/
