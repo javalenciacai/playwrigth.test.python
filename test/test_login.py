@@ -1,9 +1,6 @@
-import re
-from turtle import delay
 import pytest
-from playwright.sync_api import expect, Page
+from playwright.sync_api import Page
 import conftest
-from base_test import BaseTest
 from data_test.data_login import DataLogin
 from steps.login_steps import LoginSteps
 from steps.general_steps import  GeneralSteps

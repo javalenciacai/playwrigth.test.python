@@ -7,9 +7,6 @@ class GeneralSteps:
         BaseTest.get_video(self)            
         BaseTest.get_navigate(self, url, page_title)
     
-        
-
-
     def screenshot(self):
         BaseTest.get_screenshot(self)
     
