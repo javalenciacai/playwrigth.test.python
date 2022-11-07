@@ -6,7 +6,7 @@ from steps.login_steps import LoginSteps
 from steps.general_steps import  GeneralSteps
 
 
-class TestClass:
+class TestLogin:
 
     conftest.htmlImg = ''
     conftest.htmlVideo = ''
