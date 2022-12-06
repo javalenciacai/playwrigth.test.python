@@ -439,7 +439,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 05-Dec-2022 at 08:17:54 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 06-Dec-2022 at 08:19:07 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -464,7 +464,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Python</td>
         <td>3.10.6</td></tr></table>
     <h2>Summary</h2>
-    <p>4 tests ran in 74.93 seconds. </p>
+    <p>4 tests ran in 71.03 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">3 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -480,40 +480,26 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Failed</td>
           <td class="col-name">test/test_login.py::TestLogin::test_login_front_manager[testdata0]</td>
-          <td class="col-duration">73.86</td>
+          <td class="col-duration">70.15</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div></div>
-            <div><div><video src="videos/96444426880b50b90e3732750be812db.webm" poster="presentation.jpg" controls></video></div></div>
-            <div class="log">[gw2] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw2] linux -- Python 3.10.6 /usr/bin/python3[gw2] linux -- Python 3.10.6 /usr/bin/python3<br/><br/>self = &lt;test_login.TestLogin object at 0x7fb4b190a890&gt;<br/>page = &lt;Page url=&#x27;https://qastaging.siigo.mx/#/dashboard/1055&#x27;&gt;<br/>testdata = [{&#x27;ValidateCompanyName&#x27;: {&#x27;CompanyName&#x27;: &#x27;Gelato&#x27;, &#x27;MenuNuevo&#x27;: True}, &#x27;ValidateENV&#x27;: &#x27;qastaging&#x27;, &#x27;title&#x27;: &#x27;Siigo Nube&#x27;, &#x27;url&#x27;: &#x27;http://qastaging.siigo.mx/&#x27;, ...}]<br/><br/>    @pytest.mark.parametrize(&quot;testdata&quot;, [(DataLogin.qa_mexico)])<br/>    def test_login_front_manager(self, page: Page, testdata) -&gt; None:<br/>        i = 0<br/>        print(testdata[i][&quot;url&quot;])<br/>        print(testdata[i][&quot;username&quot;])<br/>        GeneralSteps.start_navigate(page,testdata[i][&quot;url&quot;], testdata[i][&quot;title&quot;])<br/>        LoginSteps.login_from_manager(page, testdata[i][&quot;username&quot;], &quot;1111&quot;)<br/>        LoginSteps.validate_company_on_update(page)<br/>        LoginSteps.validate_correct_environment(page, testdata[i][&quot;ValidateENV&quot;])<br/>&gt;       LoginSteps.validate_company_name(page,testdata[i][&quot;ValidateCompanyName&quot;][&quot;MenuNuevo&quot;], testdata[i][&quot;ValidateCompanyName&quot;][&quot;CompanyName&quot;])<br/><br/>test/test_login.py:39: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>test/steps/login_steps.py:63: in validate_company_name<br/>    BaseTest.expect_if_be_visible(self, locator_company_name_new_menu)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;Page url=&#x27;https://qastaging.siigo.mx/#/dashboard/1055&#x27;&gt;<br/>locator = &lt;Locator frame=&lt;Frame name= url=&#x27;https://qastaging.siigo.mx/#/dashboard/1055&#x27;&gt; selector=&#x27;fragment &gt;&gt; text=Gelato&#x27;&gt;<br/><br/>    def expect_if_be_visible(self, locator):<br/>        &#x27;&#x27;&#x27;Expect an Element if Visible&#x27;&#x27;&#x27;<br/>&gt;       expect(locator).to_be_visible(timeout=60000)<br/><span class="error">E       AssertionError: Locator expected to be visible</span><br/><span class="error">E       Actual value: None </span><br/><span class="error">E       Call log:</span><br/><span class="error">E       LocatorAssertions.to_be_visible with timeout 60000ms</span><br/><span class="error">E       waiting for locator(&quot;fragment&quot;).locator(&quot;text=Gelato&quot;)</span><br/><br/>test/base_test.py:49: AssertionError[gw2] linux -- Python 3.10.6 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>http://qastaging.siigo.mx/
+            <div><div><video src="videos/cf34b75748d18ea2be595ca5f6633afc.webm" poster="presentation.jpg" controls></video></div></div>
+            <div class="log">[gw2] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw2] linux -- Python 3.10.6 /usr/bin/python3[gw2] linux -- Python 3.10.6 /usr/bin/python3<br/><br/>self = &lt;test_login.TestLogin object at 0x7efeac9d6950&gt;<br/>page = &lt;Page url=&#x27;https://qastaging.siigo.mx/#/dashboard/1055&#x27;&gt;<br/>testdata = [{&#x27;ValidateCompanyName&#x27;: {&#x27;CompanyName&#x27;: &#x27;Gelato&#x27;, &#x27;MenuNuevo&#x27;: True}, &#x27;ValidateENV&#x27;: &#x27;qastaging&#x27;, &#x27;title&#x27;: &#x27;Siigo Nube&#x27;, &#x27;url&#x27;: &#x27;http://qastaging.siigo.mx/&#x27;, ...}]<br/><br/>    @pytest.mark.parametrize(&quot;testdata&quot;, [(DataLogin.qa_mexico)])<br/>    def test_login_front_manager(self, page: Page, testdata) -&gt; None:<br/>        i = 0<br/>        print(testdata[i][&quot;url&quot;])<br/>        print(testdata[i][&quot;username&quot;])<br/>        GeneralSteps.start_navigate(page,testdata[i][&quot;url&quot;], testdata[i][&quot;title&quot;])<br/>        LoginSteps.login_from_manager(page, testdata[i][&quot;username&quot;], &quot;1111&quot;)<br/>        LoginSteps.validate_company_on_update(page)<br/>        LoginSteps.validate_correct_environment(page, testdata[i][&quot;ValidateENV&quot;])<br/>&gt;       LoginSteps.validate_company_name(page,testdata[i][&quot;ValidateCompanyName&quot;][&quot;MenuNuevo&quot;], testdata[i][&quot;ValidateCompanyName&quot;][&quot;CompanyName&quot;])<br/><br/>test/test_login.py:39: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>test/steps/login_steps.py:63: in validate_company_name<br/>    BaseTest.expect_if_be_visible(self, locator_company_name_new_menu)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;Page url=&#x27;https://qastaging.siigo.mx/#/dashboard/1055&#x27;&gt;<br/>locator = &lt;Locator frame=&lt;Frame name= url=&#x27;https://qastaging.siigo.mx/#/dashboard/1055&#x27;&gt; selector=&#x27;fragment &gt;&gt; text=Gelato&#x27;&gt;<br/><br/>    def expect_if_be_visible(self, locator):<br/>        &#x27;&#x27;&#x27;Expect an Element if Visible&#x27;&#x27;&#x27;<br/>&gt;       expect(locator).to_be_visible(timeout=60000)<br/><span class="error">E       AssertionError: Locator expected to be visible</span><br/><span class="error">E       Actual value: None </span><br/><span class="error">E       Call log:</span><br/><span class="error">E       LocatorAssertions.to_be_visible with timeout 60000ms</span><br/><span class="error">E       waiting for locator(&quot;fragment&quot;).locator(&quot;text=Gelato&quot;)</span><br/><br/>test/base_test.py:49: AssertionError[gw2] linux -- Python 3.10.6 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>http://qastaging.siigo.mx/
 admin@gelato.com
 Elemento //*[@id=&#x27;reloadPage&#x27;] NO es visible
 <br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">test/test_login.py::TestLogin::test_login[testdata1]</td>
-          <td class="col-duration">27.14</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div><div><img src="screenshot05-12-2022_08-17-05-085745.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div><div><video src="videos/b51c1386d45197e8d84752f692ce83ec.webm" poster="presentation.jpg" controls></video></div></div>
-            <div class="log">[gw1] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw1] linux -- Python 3.10.6 /usr/bin/python3[gw1] linux -- Python 3.10.6 /usr/bin/python3[gw1] linux -- Python 3.10.6 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>http://qastaging.siigo.cl/
-admin@eventos.com
-Elemento //*[@id=&#x27;reloadPage&#x27;] NO es visible
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
           <td class="col-name">test/test_login.py::TestLogin::test_login[testdata2]</td>
-          <td class="col-duration">26.56</td>
+          <td class="col-duration">27.71</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div><div><img src="screenshot05-12-2022_08-17-03-231816.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div><div><video src="videos/1016618d33fad295dfd7743836378d45.webm" poster="presentation.jpg" controls></video></div></div>
+            <div><div><img src="screenshot06-12-2022_08-18-24-661485.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
+            <div><div><video src="videos/df7fccdaed8d5fd0597bdc563cc81047.webm" poster="presentation.jpg" controls></video></div></div>
             <div class="log">[gw3] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw3] linux -- Python 3.10.6 /usr/bin/python3[gw3] linux -- Python 3.10.6 /usr/bin/python3[gw3] linux -- Python 3.10.6 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>http://qastaging.siigo.ec/
 admin@uno.com
 Elemento //*[@id=&#x27;reloadPage&#x27;] NO es visible
@@ -522,13 +508,27 @@ Elemento //*[@id=&#x27;reloadPage&#x27;] NO es visible
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test/test_login.py::TestLogin::test_login[testdata0]</td>
-          <td class="col-duration">25.32</td>
+          <td class="col-duration">14.50</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div><div><img src="screenshot05-12-2022_08-17-03-040402.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div><div><video src="videos/0df38a4f89e87c2dbe0f135c812dda8b.webm" poster="presentation.jpg" controls></video></div></div>
+            <div><div><img src="screenshot06-12-2022_08-18-10-463045.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
+            <div><div><video src="videos/b78e9b68b6c79fd0104cd166ea3e28de.webm" poster="presentation.jpg" controls></video></div></div>
             <div class="log">[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw0] linux -- Python 3.10.6 /usr/bin/python3[gw0] linux -- Python 3.10.6 /usr/bin/python3[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>https://qastaging.siigo.com/
 siigo@techmf.com
+Elemento //*[@id=&#x27;reloadPage&#x27;] NO es visible
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test/test_login.py::TestLogin::test_login[testdata1]</td>
+          <td class="col-duration">15.87</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div><div><img src="screenshot06-12-2022_08-18-12-801475.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
+            <div><div><video src="videos/7c2216c33be9444969eb2de86505a7e2.webm" poster="presentation.jpg" controls></video></div></div>
+            <div class="log">[gw1] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw1] linux -- Python 3.10.6 /usr/bin/python3[gw1] linux -- Python 3.10.6 /usr/bin/python3[gw1] linux -- Python 3.10.6 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>http://qastaging.siigo.cl/
+admin@eventos.com
 Elemento //*[@id=&#x27;reloadPage&#x27;] NO es visible
 <br/></div></td></tr></tbody></table></body></html>
