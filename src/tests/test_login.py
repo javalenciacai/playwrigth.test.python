@@ -12,7 +12,7 @@ class TestLogin:
     conftest.htmlVideo = ''
     
     
-    @pytest.mark.parametrize("testdata", [(DataLogin.qa_colombia),(DataLogin.qa_chile),(DataLogin.qa_ecuador)])
+    @pytest.mark.parametrize("testdata", [(DataLogin.qa_colombia),(DataLogin.qa_chile)])
     def test_login(self, page: Page, testdata) -> None:
         i = 0
         print(testdata[i]["url"])

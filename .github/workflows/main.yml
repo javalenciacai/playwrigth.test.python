@@ -51,23 +51,23 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: pytest --html=test/report/report.html --self-contained-html --numprocesses 4 -k "${{ inputs.tests }}"
+        run: pytest --html=src/report/report.html --self-contained-html --numprocesses 4 -k "${{ inputs.tests }}"
         
       # Publish HTML report
       - uses: actions/upload-artifact@v3
         if: ${{ always() }}
         with:
           name: HTML-report
-          path: test/report/
+          path: src/report/
                 
                 
       # Publish HTML report as page          
-      - name: "Publish test results"
+      - name: "Publish src results"
         if: ${{ always() }}
         uses: peaceiris/actions-gh-pages@v3.7.3
         with: 
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: './test/report'
+          publish_dir: './src/report'
           keep_files: true
           
           

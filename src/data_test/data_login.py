@@ -5,8 +5,8 @@ class DataLogin:
     qa_colombia = [{"url": "https://qastaging.siigo.com/", "username": "siigo@techmf.com",
                     "ValidateCompanyName": {"MenuNuevo": False, "CompanyName": "Siigo TechMF"}, "title": title_correct,
                     "ValidateENV": "qastaging"}]
-    qa_mexico = [{"url": "http://qastaging.siigo.mx/", "username": "admin@gelato.com",
-                  "ValidateCompanyName": {"MenuNuevo": True, "CompanyName": "Gelato"}, "title": title_correct,
+    qa_mexico = [{"url": "http://qastaging.siigo.mx/", "username": "QADesplieguePremium001@yopmail.com",
+                  "ValidateCompanyName": {"MenuNuevo": True, "CompanyName": "QADesplieguePremium001"}, "title": title_correct,
                   "ValidateENV": "qastaging"}]
     qa_chile = [{"url": "http://qastaging.siigo.cl/", "username": "admin@eventos.com",
                  "ValidateCompanyName": {"MenuNuevo": True, "CompanyName": "EVENTOS EN LA NUBE"}, "title": title_correct,

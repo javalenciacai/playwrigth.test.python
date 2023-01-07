@@ -13,7 +13,7 @@ class BaseTest:
     def get_video(self):
         '''get path of video and get htmlVideo'''
         path = self.video.path()
-        path = path.replace("test/report/videos", "videos")
+        path = path.replace("src/report/videos", "videos")
         conftest.htmlVideo = '<div><video src="%s" poster="presentation.jpg" controls></video></div>' % path
 
     def get_navigate(self, url, title):
@@ -54,10 +54,10 @@ class BaseTest:
         dt_string = now.strftime("%d-%m-%Y_%H-%M-%S-%f")
         name = dt_string
         img = "screenshot" + name + ".png"
-        self.screenshot(path="test/report/" + img)
+        self.screenshot(path="src/report/" + img)
         html_img = '<div><img src="%s" alt="screenshot" style="width:600px;height:228px;" ' \
                    'onclick="window.open(this.src)" align="right"/></div>' % img
         conftest.htmlImg = html_img
 
     def tearDown(self) -> None:
-        print("hola test")
+        print("hola src")

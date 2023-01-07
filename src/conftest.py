@@ -13,7 +13,7 @@ def context(playwright: Playwright):
         slow_mo=0,
         timeout=20000,
     )
-    context = context.new_context(record_video_dir="test/report/videos/")
+    context = context.new_context(record_video_dir="src/report/videos/")
 
     yield context
 
