@@ -12,8 +12,12 @@ jobs:
     - uses: actions/checkout@v3
     
     # Runs a set of commands using the runners shell
-    - name: Run a multi-line script
+    - name: Run script install dependency
       run: |
         sudo timedatectl set-timezone America/Bogota
         source venv/bin/activate
-        python -m unittest discover \src
+        pip install -r requirements.tx
+        
+      # Runs a single command using the runners shell
+    - name: Run script unittest
+      run: python -m unittest discover \src
