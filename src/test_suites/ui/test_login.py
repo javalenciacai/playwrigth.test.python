@@ -14,6 +14,7 @@ class TestLogin:
     
     @pytest.mark.parametrize("testdata", [(DataLogin.qa_colombia),(DataLogin.qa_chile)])
     def test_login(self, page: Page, testdata) -> None:
+        """Login app environment qa"""
         i = 0
         print(testdata[i]["url"])
         print(testdata[i]["username"])
@@ -25,10 +26,9 @@ class TestLogin:
         GeneralSteps.screenshot(page)
         
     
-    
-
     @pytest.mark.parametrize("testdata", [(DataLogin.qa_mexico)])
     def test_login_front_manager(self, page: Page, testdata) -> None:
+        """ Test login app on from manager environment qa"""
         i = 0
         print(testdata[i]["url"])
         print(testdata[i]["username"])

@@ -4,3 +4,4 @@ pytest_html_report.html
 .idea/
 report/
 .pytest_cache/
+test_api_get_token.py

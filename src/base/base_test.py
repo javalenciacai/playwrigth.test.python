@@ -49,6 +49,7 @@ class BaseTest:
         expect(locator).to_be_visible(timeout=60000)
     
     def get_screenshot(self):
+        '''takes a screenshot and passes it as html code'''
         # datetime object containing current date and time
         now = datetime.now()
         dt_string = now.strftime("%d-%m-%Y_%H-%M-%S-%f")
@@ -60,8 +61,13 @@ class BaseTest:
         conftest.htmlImg = html_img
 
     def requests_api_get(self, api_request_context, url):
+        '''returns a get method for an url'''
         return api_request_context.get(url)
 
 
+    def requests_api_post(self, api_request_context, url, body, headers):
+        '''returns a get method for an url'''
+        return api_request_context.post(url, data=body, headers=headers)
+
     def tearDown(self) -> None:
-        print("hola src")
+        pass
