@@ -27,12 +27,16 @@
         "pluginmanager",
         "poster",
         "presentation",
+        "pytest",
         "qastaging",
+        "reporter",
+        "requirements",
         "runtest",
         "Shura",
         "siigo",
         "Siigo",
         "siigonube",
-        "slow"
+        "slow",
+        "xdist"
     ]
 }
