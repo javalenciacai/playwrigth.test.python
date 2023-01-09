@@ -43,7 +43,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           sudo timedatectl set-timezone America/Bogota
-          pip install pytest-playwright
+          
           source venv/bin/activate
           pip install -r requirements.txt
           playwright install chromium
