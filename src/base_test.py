@@ -4,7 +4,7 @@ from datetime import datetime
 
 
 class BaseTest:
-    """The base the all tests"""
+    """The base the all test_suites"""
     
         
     def setUp(self) -> None:
