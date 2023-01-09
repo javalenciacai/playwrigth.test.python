@@ -11,7 +11,7 @@ class TestApiRunner:
     conftest.baseUrl = 'https://servicesqa.siigo.com/'
 
 
-    @pytest.mark.parametrize("testdata", ["ACClosingApi/","ACCostingApi/","ACEntryApi/","ACGeneralApi/","ACMagneticApi/","AcPayrollApi/","ACRecoveryApi/","ACReportApi/","WorkFlowApi/"])
+    @pytest.mark.parametrize("testdata", ["ACGlobalStateApi/","ACClosingApi/","ACCostingApi/","ACEntryApi/","ACGeneralApi/","ACMagneticApi/","AcPayrollApi/","ACRecoveryApi/","ACReportApi/","WorkFlowApi/"])
     def test_get_api_runner(self, api_request_context, testdata):
         """ test api runner"""
         response = BaseTest.requests_api_get(self, api_request_context, testdata)
