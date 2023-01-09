@@ -16,7 +16,7 @@ jobs:
       run: |
         sudo timedatectl set-timezone America/Bogota
         source venv/bin/activate
-        pip install -r requirements.tx
+        pip install -r requirements.txt
         
       # Runs a single command using the runners shell
     - name: Run script unittest
