@@ -3,6 +3,7 @@ from playwright.sync_api import Playwright
 
 htmlImg = ''
 htmlVideo = ''
+baseUrl = None
 
 @pytest.fixture()
 def context(playwright: Playwright):
@@ -18,6 +19,19 @@ def context(playwright: Playwright):
     yield context
 
     context.close()
+
+
+@pytest.fixture
+def api_request_context(playwright: Playwright):    
+    context = playwright.request.new_context(
+        base_url= baseUrl,
+        extra_http_headers={
+            "Content-Type": "application/json",
+            "Authorization": "Token my-api-token",
+        },
+    )
+    yield context
+    context.dispose()
 
 @pytest.hookimpl(hookwrapper=True)
 def pytest_runtest_makereport(item, call):

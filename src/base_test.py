@@ -59,5 +59,9 @@ class BaseTest:
                    'onclick="window.open(this.src)" align="right"/></div>' % img
         conftest.htmlImg = html_img
 
+    def requests_api_get(self, api_request_context, url):
+        return api_request_context.get(url)
+
+
     def tearDown(self) -> None:
         print("hola src")

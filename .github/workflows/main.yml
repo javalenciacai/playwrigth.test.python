@@ -51,7 +51,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: pytest --html=src/report/report.html --self-contained-html --numprocesses 4 -k "${{ inputs.tests }}"
+        run: pytest src/tests/ui --html=src/report/report.html --self-contained-html --numprocesses 4 -k "${{ inputs.tests }}"
         
       # Publish HTML report
       - uses: actions/upload-artifact@v3
