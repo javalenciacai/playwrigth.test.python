@@ -1,4 +1,4 @@
-from base_test import BaseTest
+from base.base_test import BaseTest
 from repository.repository_login import RepositoryLogin
 from repository.repository_login_from_manager import RepositoryLoginFromManager
 from playwright.sync_api import expect

@@ -1,5 +1,5 @@
 import pytest
-from base_test import BaseTest
+from base.base_test import BaseTest
 import conftest
 
 

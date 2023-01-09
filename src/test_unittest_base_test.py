@@ -1,7 +1,7 @@
 import unittest
 
 import pytest
-from base_test import BaseTest
+from base.base_test import BaseTest
 from steps.general_steps import GeneralSteps
 from steps.login_steps import LoginSteps
 
