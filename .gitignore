@@ -3,3 +3,4 @@ __pycache__/
 pytest_html_report.html
 .idea/
 report/
+.pytest_cache/
