@@ -46,7 +46,7 @@ jobs:
           pip install pytest-playwright
           source venv/bin/activate
           pip install -r requirements.txt
-          playwright install
+          playwright install chromium
           echo test, and deploy your project.
 
       # Runs a single command using the runners shell
