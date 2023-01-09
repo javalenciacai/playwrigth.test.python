@@ -439,7 +439,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 09-Jan-2023 at 12:48:48 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 09-Jan-2023 at 18:45:39 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -464,42 +464,30 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Python</td>
         <td>3.10.6</td></tr></table>
     <h2>Summary</h2>
-    <p>3 tests ran in 19.57 seconds. </p>
+    <p>3 tests ran in 21.09 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">3 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
         <tr>
           <th class="sortable result initial-sort" col="result">Result</th>
+          <th class="sortable time" col="time">Time</th>
           <th class="sortable" col="name">Test</th>
-          <th class="sortable" col="duration">Duration</th>
-          <th class="sortable links" col="links">Links</th></tr>
+          <th>Description</th>
+          <th class="sortable" col="duration">Duration</th></tr>
         <tr hidden="true" id="not-found-message">
-          <th colspan="4">No results found. Try to check the filters</th></tr></thead>
+          <th colspan="5">No results found. Try to check the filters</th></tr></thead>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">src/test_suites/ui/test_login.py::TestLogin::test_login[testdata0]</td>
-          <td class="col-duration">18.19</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div><div><img src="screenshot09-01-2023_12-48-47-004415.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div><div><video src="videos/52ef66d9147a9552304854305789b374.webm" poster="presentation.jpg" controls></video></div></div>
-            <div class="log">[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw0] linux -- Python 3.10.6 /usr/bin/python3[gw0] linux -- Python 3.10.6 /usr/bin/python3[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>https://qastaging.siigo.com/
-siigo@techmf.com
-Elemento //*[@id=&#x27;reloadPage&#x27;] NO es visible
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
+          <td class="col-time">2023-01-09 23:45:39.118702</td>
           <td class="col-name">src/test_suites/ui/test_login.py::TestLogin::test_login[testdata1]</td>
-          <td class="col-duration">16.02</td>
-          <td class="col-links"></td></tr>
+          <td>Login app environment qa</td>
+          <td class="col-duration">19.94</td></tr>
         <tr>
-          <td class="extra" colspan="4">
-            <div><div><img src="screenshot09-01-2023_12-48-44-974053.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div><div><video src="videos/da923e0c5f1dd8f3c37c17dcf166bb61.webm" poster="presentation.jpg" controls></video></div></div>
+          <td class="extra" colspan="5">
+            <div><div><img src="screenshot09-01-2023_18-45-38-089525.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
+            <div><div><video src="videos/0a33eb304b1afc12bdedbf5a41e6a14f.webm" poster="presentation.jpg" controls></video></div></div>
             <div class="log">[gw1] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw1] linux -- Python 3.10.6 /usr/bin/python3[gw1] linux -- Python 3.10.6 /usr/bin/python3[gw1] linux -- Python 3.10.6 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>http://qastaging.siigo.cl/
 admin@eventos.com
 Elemento //*[@id=&#x27;reloadPage&#x27;] NO es visible
@@ -507,14 +495,30 @@ Elemento //*[@id=&#x27;reloadPage&#x27;] NO es visible
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
+          <td class="col-time">2023-01-09 23:45:39.118965</td>
           <td class="col-name">src/test_suites/ui/test_login.py::TestLogin::test_login_front_manager[testdata0]</td>
-          <td class="col-duration">18.67</td>
-          <td class="col-links"></td></tr>
+          <td> Test login app on from manager environment qa</td>
+          <td class="col-duration">19.72</td></tr>
         <tr>
-          <td class="extra" colspan="4">
-            <div><div><img src="screenshot09-01-2023_12-48-48-476790.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div><div><video src="videos/2185388693c1a2e720562d36260aa167.webm" poster="presentation.jpg" controls></video></div></div>
-            <div class="log">[gw3] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw3] linux -- Python 3.10.6 /usr/bin/python3[gw3] linux -- Python 3.10.6 /usr/bin/python3[gw3] linux -- Python 3.10.6 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>http://qastaging.siigo.mx/
+          <td class="extra" colspan="5">
+            <div><div><img src="screenshot09-01-2023_18-45-38-067227.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
+            <div><div><video src="videos/139f304dfbbc01a0833661526ed09e55.webm" poster="presentation.jpg" controls></video></div></div>
+            <div class="log">[gw2] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw2] linux -- Python 3.10.6 /usr/bin/python3[gw2] linux -- Python 3.10.6 /usr/bin/python3[gw2] linux -- Python 3.10.6 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>http://qastaging.siigo.mx/
 QADesplieguePremium001@yopmail.com
+Elemento //*[@id=&#x27;reloadPage&#x27;] NO es visible
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-time">2023-01-09 23:45:39.119147</td>
+          <td class="col-name">src/test_suites/ui/test_login.py::TestLogin::test_login[testdata0]</td>
+          <td>Login app environment qa</td>
+          <td class="col-duration">17.03</td></tr>
+        <tr>
+          <td class="extra" colspan="5">
+            <div><div><img src="screenshot09-01-2023_18-45-33-999902.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
+            <div><div><video src="videos/8ed071ed8eae8f03066c314e1333a4df.webm" poster="presentation.jpg" controls></video></div></div>
+            <div class="log">[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw0] linux -- Python 3.10.6 /usr/bin/python3[gw0] linux -- Python 3.10.6 /usr/bin/python3[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>https://qastaging.siigo.com/
+siigo@techmf.com
 Elemento //*[@id=&#x27;reloadPage&#x27;] NO es visible
 <br/></div></td></tr></tbody></table></body></html>
