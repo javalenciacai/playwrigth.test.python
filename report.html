@@ -439,7 +439,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 07-Jan-2023 at 09:37:02 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 08-Jan-2023 at 19:22:18 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -464,8 +464,8 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Python</td>
         <td>3.10.6</td></tr></table>
     <h2>Summary</h2>
-    <p>3 tests ran in 20.96 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">3 passed</span>, <input checked="true" class="filter" data-test-result="skipped" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">3 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>3 tests ran in 28.39 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">2 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -476,72 +476,44 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="skipped results-table-row">
+      <tbody class="failed results-table-row">
         <tr>
-          <td class="col-result">Skipped</td>
-          <td class="col-name">src/test_unittest_base_test.py::TestBaseTest::test_instantiation_general_steps</td>
-          <td class="col-duration">0.00</td>
+          <td class="col-result">Failed</td>
+          <td class="col-name">src/tests/ui/test_login.py::TestLogin::test_login[testdata0]</td>
+          <td class="col-duration">15.39</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">[gw1] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw1] linux -- Python 3.10.6 /usr/bin/python3<br/>(&#x27;/home/runner/work/playwrigth.test.python/playwrigth.test.python/src/test_unittest_base_test.py&#x27;, 20, &#x27;Skipped: Test is unittest&#x27;)[gw1] linux -- Python 3.10.6 /usr/bin/python3<br/></div></td></tr></tbody>
-      <tbody class="skipped results-table-row">
-        <tr>
-          <td class="col-result">Skipped</td>
-          <td class="col-name">src/test_unittest_base_test.py::TestBaseTest::test_instantiation_base_test</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/>(&#x27;/home/runner/work/playwrigth.test.python/playwrigth.test.python/src/test_unittest_base_test.py&#x27;, 13, &#x27;Skipped: Test is unittest&#x27;)[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/></div></td></tr></tbody>
-      <tbody class="skipped results-table-row">
-        <tr>
-          <td class="col-result">Skipped</td>
-          <td class="col-name">src/test_unittest_base_test.py::TestBaseTest::test_instantiation_login_steps</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">[gw2] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw2] linux -- Python 3.10.6 /usr/bin/python3<br/>(&#x27;/home/runner/work/playwrigth.test.python/playwrigth.test.python/src/test_unittest_base_test.py&#x27;, 28, &#x27;Skipped: Test is unittest&#x27;)[gw2] linux -- Python 3.10.6 /usr/bin/python3<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">src/tests/test_login.py::TestLogin::test_login[testdata1]</td>
-          <td class="col-duration">19.29</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div><div><img src="screenshot07-01-2023_09-37-00-252888.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div><div><video src="videos/7686785111752bbf951b055e821f7c6d.webm" poster="presentation.jpg" controls></video></div></div>
-            <div class="log">[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw0] linux -- Python 3.10.6 /usr/bin/python3[gw0] linux -- Python 3.10.6 /usr/bin/python3[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>http://qastaging.siigo.cl/
-admin@eventos.com
-Elemento //*[@id=&#x27;reloadPage&#x27;] NO es visible
-<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">src/tests/test_login.py::TestLogin::test_login[testdata0]</td>
-          <td class="col-duration">19.29</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div><div><img src="screenshot07-01-2023_09-36-58-172483.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div><div><video src="videos/a0742d3d7502bcb0141dad69d68e71d7.webm" poster="presentation.jpg" controls></video></div></div>
-            <div class="log">[gw3] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw3] linux -- Python 3.10.6 /usr/bin/python3[gw3] linux -- Python 3.10.6 /usr/bin/python3[gw3] linux -- Python 3.10.6 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>https://qastaging.siigo.com/
+            <div></div>
+            <div><div><video src="videos/93f1c2777f2e07795850028b7ae396ed.webm" poster="presentation.jpg" controls></video></div></div>
+            <div class="log">[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw0] linux -- Python 3.10.6 /usr/bin/python3[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/><br/>self = &lt;test_login.TestLogin object at 0x7f7d1e1d6650&gt;<br/>page = &lt;Page url=&#x27;https://qastaging.siigo.com/&#x27;&gt;<br/>testdata = [{&#x27;ValidateCompanyName&#x27;: {&#x27;CompanyName&#x27;: &#x27;Siigo TechMF&#x27;, &#x27;MenuNuevo&#x27;: False}, &#x27;ValidateENV&#x27;: &#x27;qastaging&#x27;, &#x27;title&#x27;: &#x27;Siigo Nube&#x27;, &#x27;url&#x27;: &#x27;https://qastaging.siigo.com/&#x27;, ...}]<br/><br/>    @pytest.mark.parametrize(&quot;testdata&quot;, [(DataLogin.qa_colombia),(DataLogin.qa_chile)])<br/>    def test_login(self, page: Page, testdata) -&gt; None:<br/>        i = 0<br/>        print(testdata[i][&quot;url&quot;])<br/>        print(testdata[i][&quot;username&quot;])<br/>&gt;       GeneralSteps.start_navigate(page,testdata[i][&quot;url&quot;], testdata[i][&quot;title&quot;])<br/><br/>src/tests/ui/test_login.py:20: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>src/steps/general_steps.py:8: in start_navigate<br/>    BaseTest.get_navigate(self, url, page_title)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;Page url=&#x27;https://qastaging.siigo.com/&#x27;&gt;<br/>url = &#x27;https://qastaging.siigo.com/&#x27;, title = &#x27;Siigo Nube&#x27;<br/><br/>    def get_navigate(self, url, title):<br/>        &#x27;&#x27;&#x27;Start browser and validate title&#x27;&#x27;&#x27;<br/>        self.goto(url)<br/>&gt;       expect(self).to_have_title(title)<br/><span class="error">E       AssertionError: Page title expected to be &#x27;Siigo Nube&#x27;</span><br/><span class="error">E       Actual value: 502 Bad Gateway </span><br/><span class="error">E       Call log:</span><br/><span class="error">E       PageAssertions.to_have_title with timeout 5000ms</span><br/><span class="error">E       waiting for locator(&quot;:root&quot;)</span><br/><span class="error">E         locator resolved to &lt;html&gt;…&lt;/html&gt;</span><br/><span class="error">E         unexpected value &quot;502 Bad Gateway&quot;</span><br/><span class="error">E       waiting for locator(&quot;:root&quot;)</span><br/><span class="error">E         locator resolved to &lt;html&gt;…&lt;/html&gt;</span><br/><span class="error">E         unexpected value &quot;502 Bad Gateway&quot;</span><br/><span class="error">E         locator resolved to &lt;html&gt;…&lt;/html&gt;</span><br/><span class="error">E         unexpected value &quot;502 Bad Gateway&quot;</span><br/><span class="error">E         locator resolved to &lt;html&gt;…&lt;/html&gt;</span><br/><span class="error">E         unexpected value &quot;502 Bad Gateway&quot;</span><br/><span class="error">E         locator resolved to &lt;html&gt;…&lt;/html&gt;</span><br/><span class="error">E         unexpected value &quot;502 Bad Gateway&quot;</span><br/><span class="error">E         locator resolved to &lt;html&gt;…&lt;/html&gt;</span><br/><span class="error">E         unexpected value &quot;502 Bad Gateway&quot;</span><br/><span class="error">E         locator resolved to &lt;html&gt;…&lt;/html&gt;</span><br/><span class="error">E         unexpected value &quot;502 Bad Gateway&quot;</span><br/><span class="error">E         locator resolved to &lt;html&gt;…&lt;/html&gt;</span><br/><span class="error">E         unexpected value &quot;502 Bad Gateway&quot;</span><br/><span class="error">E         locator resolved to &lt;html&gt;…&lt;/html&gt;</span><br/><span class="error">E         unexpected value &quot;502 Bad Gateway&quot;</span><br/><br/>src/base_test.py:22: AssertionError[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>https://qastaging.siigo.com/
 siigo@techmf.com
-Elemento //*[@id=&#x27;reloadPage&#x27;] NO es visible
 <br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">src/tests/test_login.py::TestLogin::test_login_front_manager[testdata0]</td>
-          <td class="col-duration">19.88</td>
+          <td class="col-name">src/tests/ui/test_login.py::TestLogin::test_login_front_manager[testdata0]</td>
+          <td class="col-duration">27.58</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div><div><img src="screenshot07-01-2023_09-37-02-420491.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div><div><video src="videos/1ec4b24d36df31dc26db05c80549c968.webm" poster="presentation.jpg" controls></video></div></div>
+            <div><div><img src="screenshot08-01-2023_19-22-18-160750.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
+            <div><div><video src="videos/0cde99df4922b2415e8440f927ce3956.webm" poster="presentation.jpg" controls></video></div></div>
             <div class="log">[gw1] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw1] linux -- Python 3.10.6 /usr/bin/python3[gw1] linux -- Python 3.10.6 /usr/bin/python3[gw1] linux -- Python 3.10.6 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>http://qastaging.siigo.mx/
 QADesplieguePremium001@yopmail.com
+Elemento //*[@id=&#x27;reloadPage&#x27;] NO es visible
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">src/tests/ui/test_login.py::TestLogin::test_login[testdata1]</td>
+          <td class="col-duration">23.07</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div><div><img src="screenshot08-01-2023_19-22-13-349607.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
+            <div><div><video src="videos/303a5fd505397d0f7748ac13229facda.webm" poster="presentation.jpg" controls></video></div></div>
+            <div class="log">[gw3] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw3] linux -- Python 3.10.6 /usr/bin/python3[gw3] linux -- Python 3.10.6 /usr/bin/python3[gw3] linux -- Python 3.10.6 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>http://qastaging.siigo.cl/
+admin@eventos.com
 Elemento //*[@id=&#x27;reloadPage&#x27;] NO es visible
 <br/></div></td></tr></tbody></table></body></html>
