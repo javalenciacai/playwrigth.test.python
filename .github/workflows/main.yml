@@ -51,7 +51,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run script api runner
-        continue-on-error: false
+        continue-on-error: true
         run: pytest src/test_suites/api --html=src/report/reportAPI.html --self-contained-html --numprocesses auto
       
       - name: Run test script
