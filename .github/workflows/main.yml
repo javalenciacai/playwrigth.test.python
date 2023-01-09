@@ -51,6 +51,8 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
+        run: pytest src/tests/api --html=src/report/reportAPI.html --self-contained-html --numprocesses auto -k
+        continue-on-error: false
         run: pytest src/tests/ui --html=src/report/report.html --self-contained-html --numprocesses 4 -k "${{ inputs.tests }}"
         
       # Publish HTML report
