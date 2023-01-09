@@ -50,10 +50,12 @@ jobs:
           echo test, and deploy your project.
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
+      - name: Run script api runner
+        continue-on-error: false
+        run: pytest src/tests/api --html=src/report/reportAPI.html --self-contained-html --numprocesses auto
+      
+      - name: Run test script
         run: |
-          pytest src/tests/api --html=src/report/reportAPI.html --self-contained-html --numprocesses auto
-          continue-on-error: false
           pytest src/tests/ui --html=src/report/report.html --self-contained-html --numprocesses 4 -k "${{ inputs.tests }}"
         
       # Publish HTML report
