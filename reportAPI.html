@@ -439,7 +439,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>reportAPI.html</h1>
-    <p>Report generated on 09-Jan-2023 at 19:00:01 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 09-Jan-2023 at 19:01:22 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -464,7 +464,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Python</td>
         <td>3.10.6</td></tr></table>
     <h2>Summary</h2>
-    <p>9 tests ran in 2.15 seconds. </p>
+    <p>9 tests ran in 1.11 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">8 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -480,34 +480,22 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
-          <td class="col-time">2023-01-10 00:00:01.834335</td>
+          <td class="col-time">2023-01-10 00:01:22.673562</td>
           <td class="col-name">src/test_suites/api/test_api_runner.py::TestApiRunner::test_get_api_runner[ACReportApi/]</td>
           <td> test api runner</td>
-          <td class="col-duration">0.10</td></tr>
+          <td class="col-duration">0.05</td></tr>
         <tr>
           <td class="extra" colspan="5">
             <div></div>
             <div></div>
-            <div class="log">[gw1] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw1] linux -- Python 3.10.6 /usr/bin/python3[gw1] linux -- Python 3.10.6 /usr/bin/python3<br/><br/>self = &lt;test_api_runner.TestApiRunner object at 0x7f1b92d77070&gt;<br/>api_request_context = &lt;playwright._impl._fetch.APIRequestContext object at 0x7f1b92a98460&gt;<br/>testdata = &#x27;ACReportApi/&#x27;<br/><br/>    @pytest.mark.parametrize(&quot;testdata&quot;, [&quot;ACClosingApi/&quot;,&quot;ACCostingApi/&quot;,&quot;ACEntryApi/&quot;,&quot;ACGeneralApi/&quot;,&quot;ACMagneticApi/&quot;,&quot;AcPayrollApi/&quot;,&quot;ACRecoveryApi/&quot;,&quot;ACReportApi/&quot;,&quot;WorkFlowApi/&quot;])<br/>    def test_get_api_runner(self, api_request_context, testdata):<br/>        &quot;&quot;&quot; test api runner&quot;&quot;&quot;<br/>        response = BaseTest.requests_api_get(self, api_request_context, testdata)<br/>&gt;       assert response.status == 200<br/><span class="error">E       AssertionError: assert 403 == 200</span><br/><span class="error">E        +  where 403 = &lt;APIResponse url=&#x27;https://servicesqa.siigo.com/ACReportApi/&#x27; status=403 status_text=&#x27;Site Disabled&#x27;&gt;.status</span><br/><br/>src/test_suites/api/test_api_runner.py:18: AssertionError[gw1] linux -- Python 3.10.6 /usr/bin/python3<br/></div></td></tr></tbody>
+            <div class="log">[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw0] linux -- Python 3.10.6 /usr/bin/python3[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/><br/>self = &lt;test_api_runner.TestApiRunner object at 0x7f41cf017550&gt;<br/>api_request_context = &lt;playwright._impl._fetch.APIRequestContext object at 0x7f41cf015540&gt;<br/>testdata = &#x27;ACReportApi/&#x27;<br/><br/>    @pytest.mark.parametrize(&quot;testdata&quot;, [&quot;ACClosingApi/&quot;,&quot;ACCostingApi/&quot;,&quot;ACEntryApi/&quot;,&quot;ACGeneralApi/&quot;,&quot;ACMagneticApi/&quot;,&quot;AcPayrollApi/&quot;,&quot;ACRecoveryApi/&quot;,&quot;ACReportApi/&quot;,&quot;WorkFlowApi/&quot;])<br/>    def test_get_api_runner(self, api_request_context, testdata):<br/>        &quot;&quot;&quot; test api runner&quot;&quot;&quot;<br/>        response = BaseTest.requests_api_get(self, api_request_context, testdata)<br/>&gt;       assert response.status == 200<br/><span class="error">E       AssertionError: assert 503 == 200</span><br/><span class="error">E        +  where 503 = &lt;APIResponse url=&#x27;https://servicesqa.siigo.com/ACReportApi/&#x27; status=503 status_text=&#x27;Service Unavailable&#x27;&gt;.status</span><br/><br/>src/test_suites/api/test_api_runner.py:18: AssertionError[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-time">2023-01-10 00:00:01.832902</td>
-          <td class="col-name">src/test_suites/api/test_api_runner.py::TestApiRunner::test_get_api_runner[ACClosingApi/]</td>
-          <td> test api runner</td>
-          <td class="col-duration">0.86</td></tr>
-        <tr>
-          <td class="extra" colspan="5">
-            <div></div>
-            <div></div>
-            <div class="log">[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw0] linux -- Python 3.10.6 /usr/bin/python3[gw0] linux -- Python 3.10.6 /usr/bin/python3[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-time">2023-01-10 00:00:01.833134</td>
+          <td class="col-time">2023-01-10 00:01:22.672463</td>
           <td class="col-name">src/test_suites/api/test_api_runner.py::TestApiRunner::test_get_api_runner[ACEntryApi/]</td>
           <td> test api runner</td>
-          <td class="col-duration">0.84</td></tr>
+          <td class="col-duration">0.45</td></tr>
         <tr>
           <td class="extra" colspan="5">
             <div></div>
@@ -516,10 +504,22 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-time">2023-01-10 00:00:01.833397</td>
+          <td class="col-time">2023-01-10 00:01:22.672638</td>
+          <td class="col-name">src/test_suites/api/test_api_runner.py::TestApiRunner::test_get_api_runner[ACClosingApi/]</td>
+          <td> test api runner</td>
+          <td class="col-duration">0.49</td></tr>
+        <tr>
+          <td class="extra" colspan="5">
+            <div></div>
+            <div></div>
+            <div class="log">[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw0] linux -- Python 3.10.6 /usr/bin/python3[gw0] linux -- Python 3.10.6 /usr/bin/python3[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-time">2023-01-10 00:01:22.672840</td>
           <td class="col-name">src/test_suites/api/test_api_runner.py::TestApiRunner::test_get_api_runner[ACGeneralApi/]</td>
           <td> test api runner</td>
-          <td class="col-duration">0.13</td></tr>
+          <td class="col-duration">0.04</td></tr>
         <tr>
           <td class="extra" colspan="5">
             <div></div>
@@ -528,10 +528,10 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-time">2023-01-10 00:00:01.833547</td>
+          <td class="col-time">2023-01-10 00:01:22.672976</td>
           <td class="col-name">src/test_suites/api/test_api_runner.py::TestApiRunner::test_get_api_runner[ACCostingApi/]</td>
           <td> test api runner</td>
-          <td class="col-duration">0.10</td></tr>
+          <td class="col-duration">0.05</td></tr>
         <tr>
           <td class="extra" colspan="5">
             <div></div>
@@ -540,22 +540,10 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-time">2023-01-10 00:00:01.833685</td>
-          <td class="col-name">src/test_suites/api/test_api_runner.py::TestApiRunner::test_get_api_runner[AcPayrollApi/]</td>
-          <td> test api runner</td>
-          <td class="col-duration">0.11</td></tr>
-        <tr>
-          <td class="extra" colspan="5">
-            <div></div>
-            <div></div>
-            <div class="log">[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw0] linux -- Python 3.10.6 /usr/bin/python3[gw0] linux -- Python 3.10.6 /usr/bin/python3[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-time">2023-01-10 00:00:01.833816</td>
+          <td class="col-time">2023-01-10 00:01:22.673077</td>
           <td class="col-name">src/test_suites/api/test_api_runner.py::TestApiRunner::test_get_api_runner[ACMagneticApi/]</td>
           <td> test api runner</td>
-          <td class="col-duration">0.12</td></tr>
+          <td class="col-duration">0.07</td></tr>
         <tr>
           <td class="extra" colspan="5">
             <div></div>
@@ -564,10 +552,10 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-time">2023-01-10 00:00:01.833954</td>
-          <td class="col-name">src/test_suites/api/test_api_runner.py::TestApiRunner::test_get_api_runner[ACRecoveryApi/]</td>
+          <td class="col-time">2023-01-10 00:01:22.673173</td>
+          <td class="col-name">src/test_suites/api/test_api_runner.py::TestApiRunner::test_get_api_runner[AcPayrollApi/]</td>
           <td> test api runner</td>
-          <td class="col-duration">0.11</td></tr>
+          <td class="col-duration">0.05</td></tr>
         <tr>
           <td class="extra" colspan="5">
             <div></div>
@@ -576,12 +564,24 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-time">2023-01-10 00:00:01.834479</td>
-          <td class="col-name">src/test_suites/api/test_api_runner.py::TestApiRunner::test_get_api_runner[WorkFlowApi/]</td>
+          <td class="col-time">2023-01-10 00:01:22.673271</td>
+          <td class="col-name">src/test_suites/api/test_api_runner.py::TestApiRunner::test_get_api_runner[ACRecoveryApi/]</td>
           <td> test api runner</td>
-          <td class="col-duration">0.15</td></tr>
+          <td class="col-duration">0.05</td></tr>
         <tr>
           <td class="extra" colspan="5">
             <div></div>
             <div></div>
-            <div class="log">[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw0] linux -- Python 3.10.6 /usr/bin/python3[gw0] linux -- Python 3.10.6 /usr/bin/python3[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/></div></td></tr></tbody></table></body></html>
+            <div class="log">[gw1] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw1] linux -- Python 3.10.6 /usr/bin/python3[gw1] linux -- Python 3.10.6 /usr/bin/python3[gw1] linux -- Python 3.10.6 /usr/bin/python3<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-time">2023-01-10 00:01:22.673665</td>
+          <td class="col-name">src/test_suites/api/test_api_runner.py::TestApiRunner::test_get_api_runner[WorkFlowApi/]</td>
+          <td> test api runner</td>
+          <td class="col-duration">0.07</td></tr>
+        <tr>
+          <td class="extra" colspan="5">
+            <div></div>
+            <div></div>
+            <div class="log">[gw1] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw1] linux -- Python 3.10.6 /usr/bin/python3[gw1] linux -- Python 3.10.6 /usr/bin/python3[gw1] linux -- Python 3.10.6 /usr/bin/python3<br/></div></td></tr></tbody></table></body></html>
