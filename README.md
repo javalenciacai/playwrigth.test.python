@@ -2,6 +2,8 @@
 
 [![CI](https://github.com/javalenciacai/playwrigth.test.python/actions/workflows/main.yml/badge.svg)](https://github.com/javalenciacai/playwrigth.test.python/actions/workflows/main.yml)
 
+[![Python unittest](https://github.com/javalenciacai/playwrigth.test.python/actions/workflows/python-unitest.yml/badge.svg)](https://github.com/javalenciacai/playwrigth.test.python/actions/workflows/python-unitest.yml)
+
 ### [Report](https://javalenciacai.github.io/playwrigth.test.python/report.html)
 
 ### [ReportAPI](https://javalenciacai.github.io/playwrigth.test.python/reportAPI.html)
