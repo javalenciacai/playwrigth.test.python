@@ -439,7 +439,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 09-Mar-2023 at 08:30:20 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 10-Mar-2023 at 08:24:34 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -459,12 +459,12 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Linux-5.15.0-1034-azure-x86_64-with-glibc2.35</td></tr>
       <tr>
         <td>Plugins</td>
-        <td>{"base-url": "2.0.0", "html": "3.2.0", "metadata": "2.0.4", "playwright": "0.3.1", "xdist": "3.2.0"}</td></tr>
+        <td>{"base-url": "2.0.0", "html": "3.2.0", "metadata": "2.0.4", "playwright": "0.3.2", "xdist": "3.2.0"}</td></tr>
       <tr>
         <td>Python</td>
         <td>3.10.6</td></tr></table>
     <h2>Summary</h2>
-    <p>3 tests ran in 26.02 seconds. </p>
+    <p>3 tests ran in 26.34 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">2 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -480,45 +480,45 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
-          <td class="col-time">2023-03-09 13:30:20.078188</td>
+          <td class="col-time">2023-03-10 13:24:34.050214</td>
           <td class="col-name">src/test_suites/ui/test_login.py::TestLogin::test_login[testdata0]</td>
           <td>Login app environment qa</td>
-          <td class="col-duration">25.07</td></tr>
+          <td class="col-duration">25.54</td></tr>
         <tr>
           <td class="extra" colspan="5">
             <div></div>
-            <div><div><video src="videos/c5ed8d7efd48d2cb1d1118e6743d8dd0.webm" poster="presentation.jpg" controls></video></div></div>
-            <div class="log">[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw0] linux -- Python 3.10.6 /usr/bin/python3[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/><br/>self = &lt;test_login.TestLogin object at 0x7fef10c9b610&gt;<br/>page = &lt;Page url=&#x27;https://qastaging.siigo.com/ISIIGO/Login.aspx?ReturnUrl=%2fISIIGO%2fDefault.aspx&#x27;&gt;<br/>testdata = [{&#x27;ValidateCompanyName&#x27;: {&#x27;CompanyName&#x27;: &#x27;Siigo TechMF&#x27;, &#x27;MenuNuevo&#x27;: False}, &#x27;ValidateENV&#x27;: &#x27;qastaging&#x27;, &#x27;title&#x27;: &#x27;Siigo Nube&#x27;, &#x27;url&#x27;: &#x27;https://qastaging.siigo.com/&#x27;, ...}]<br/><br/>    @pytest.mark.parametrize(&quot;testdata&quot;, [(DataLogin.qa_colombia),(DataLogin.qa_chile)])<br/>    def test_login(self, page: Page, testdata) -&gt; None:<br/>        &quot;&quot;&quot;Login app environment qa&quot;&quot;&quot;<br/>        i = 0<br/>        print(testdata[i][&quot;url&quot;])<br/>        print(testdata[i][&quot;username&quot;])<br/>        GeneralSteps.start_navigate(page,testdata[i][&quot;url&quot;], testdata[i][&quot;title&quot;])<br/>        LoginSteps.login(page, testdata[i][&quot;username&quot;], &quot;1111&quot;)<br/>        LoginSteps.validate_company_on_update(page)<br/>        LoginSteps.validate_correct_environment(page, testdata[i][&quot;ValidateENV&quot;])<br/>&gt;       LoginSteps.validate_company_name(page,testdata[i][&quot;ValidateCompanyName&quot;][&quot;MenuNuevo&quot;], testdata[i][&quot;ValidateCompanyName&quot;][&quot;CompanyName&quot;])<br/><br/>src/test_suites/ui/test_login.py:25: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>src/steps/login_steps.py:66: in validate_company_name<br/>    BaseTest.expect_element_attribute(self, locator_company_name, &quot;title&quot;, company_name)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;Page url=&#x27;https://qastaging.siigo.com/ISIIGO/Login.aspx?ReturnUrl=%2fISIIGO%2fDefault.aspx&#x27;&gt;<br/>element = &lt;Locator frame=&lt;Frame name= url=&#x27;https://qastaging.siigo.com/ISIIGO/Login.aspx?ReturnUrl=%2fISIIGO%2fDefault.aspx&#x27;&gt; selector=&#x27;#HeaderCompanyName&#x27;&gt;<br/>attribute = &#x27;title&#x27;, value = &#x27;Siigo TechMF&#x27;<br/><br/>    def expect_element_attribute(self, element, attribute, value):<br/>        &#x27;&#x27;&#x27;Expect an attribute &quot;to be strictly equal&quot; to the value&#x27;&#x27;&#x27;<br/>        &#x27;&#x27;&#x27;receive an element&#x27;&#x27;&#x27;<br/>&gt;       expect(element).to_have_attribute(attribute, value, timeout=20000)<br/><span class="error">E       AssertionError: Locator expected to have attribute &#x27;Siigo TechMF&#x27;</span><br/><span class="error">E       Actual value: None </span><br/><span class="error">E       Call log:</span><br/><span class="error">E       LocatorAssertions.to_have_attribute with timeout 20000ms</span><br/><span class="error">E       waiting for locator(&quot;#HeaderCompanyName&quot;)</span><br/><span class="error">E       waiting for locator(&quot;#HeaderCompanyName&quot;)</span><br/><br/>src/base/base_test.py:35: AssertionError[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>https://qastaging.siigo.com/
+            <div><div><video src="videos/51b56ce7d3d3eebd952186f4a84e83b7.webm" poster="presentation.jpg" controls></video></div></div>
+            <div class="log">[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw0] linux -- Python 3.10.6 /usr/bin/python3[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/><br/>self = &lt;test_login.TestLogin object at 0x7f57372c3640&gt;<br/>page = &lt;Page url=&#x27;https://qastaging.siigo.com/ISIIGO/Login.aspx?ReturnUrl=%2fISIIGO%2fDefault.aspx&#x27;&gt;<br/>testdata = [{&#x27;ValidateCompanyName&#x27;: {&#x27;CompanyName&#x27;: &#x27;Siigo TechMF&#x27;, &#x27;MenuNuevo&#x27;: False}, &#x27;ValidateENV&#x27;: &#x27;qastaging&#x27;, &#x27;title&#x27;: &#x27;Siigo Nube&#x27;, &#x27;url&#x27;: &#x27;https://qastaging.siigo.com/&#x27;, ...}]<br/><br/>    @pytest.mark.parametrize(&quot;testdata&quot;, [(DataLogin.qa_colombia),(DataLogin.qa_chile)])<br/>    def test_login(self, page: Page, testdata) -&gt; None:<br/>        &quot;&quot;&quot;Login app environment qa&quot;&quot;&quot;<br/>        i = 0<br/>        print(testdata[i][&quot;url&quot;])<br/>        print(testdata[i][&quot;username&quot;])<br/>        GeneralSteps.start_navigate(page,testdata[i][&quot;url&quot;], testdata[i][&quot;title&quot;])<br/>        LoginSteps.login(page, testdata[i][&quot;username&quot;], &quot;1111&quot;)<br/>        LoginSteps.validate_company_on_update(page)<br/>        LoginSteps.validate_correct_environment(page, testdata[i][&quot;ValidateENV&quot;])<br/>&gt;       LoginSteps.validate_company_name(page,testdata[i][&quot;ValidateCompanyName&quot;][&quot;MenuNuevo&quot;], testdata[i][&quot;ValidateCompanyName&quot;][&quot;CompanyName&quot;])<br/><br/>src/test_suites/ui/test_login.py:25: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>src/steps/login_steps.py:66: in validate_company_name<br/>    BaseTest.expect_element_attribute(self, locator_company_name, &quot;title&quot;, company_name)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;Page url=&#x27;https://qastaging.siigo.com/ISIIGO/Login.aspx?ReturnUrl=%2fISIIGO%2fDefault.aspx&#x27;&gt;<br/>element = &lt;Locator frame=&lt;Frame name= url=&#x27;https://qastaging.siigo.com/ISIIGO/Login.aspx?ReturnUrl=%2fISIIGO%2fDefault.aspx&#x27;&gt; selector=&#x27;#HeaderCompanyName&#x27;&gt;<br/>attribute = &#x27;title&#x27;, value = &#x27;Siigo TechMF&#x27;<br/><br/>    def expect_element_attribute(self, element, attribute, value):<br/>        &#x27;&#x27;&#x27;Expect an attribute &quot;to be strictly equal&quot; to the value&#x27;&#x27;&#x27;<br/>        &#x27;&#x27;&#x27;receive an element&#x27;&#x27;&#x27;<br/>&gt;       expect(element).to_have_attribute(attribute, value, timeout=20000)<br/><span class="error">E       AssertionError: Locator expected to have attribute &#x27;Siigo TechMF&#x27;</span><br/><span class="error">E       Actual value: None </span><br/><span class="error">E       Call log:</span><br/><span class="error">E       LocatorAssertions.to_have_attribute with timeout 20000ms</span><br/><span class="error">E       waiting for locator(&quot;#HeaderCompanyName&quot;)</span><br/><span class="error">E       waiting for locator(&quot;#HeaderCompanyName&quot;)</span><br/><br/>src/base/base_test.py:35: AssertionError[gw0] linux -- Python 3.10.6 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>https://qastaging.siigo.com/
 siigo@techmf.com
 Elemento //*[@id=&#x27;reloadPage&#x27;] NO es visible
 <br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-time">2023-03-09 13:30:20.077384</td>
+          <td class="col-time">2023-03-10 13:24:34.049612</td>
           <td class="col-name">src/test_suites/ui/test_login.py::TestLogin::test_login_front_manager[testdata0]</td>
           <td> Test login app on from manager environment qa</td>
-          <td class="col-duration">13.55</td></tr>
+          <td class="col-duration">12.49</td></tr>
         <tr>
           <td class="extra" colspan="5">
-            <div><div><img src="screenshot09-03-2023_08-30-07-848716.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div><div><video src="videos/ad599b9b3ebfcf9380d805f9236ab87c.webm" poster="presentation.jpg" controls></video></div></div>
-            <div class="log">[gw1] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw1] linux -- Python 3.10.6 /usr/bin/python3[gw1] linux -- Python 3.10.6 /usr/bin/python3[gw1] linux -- Python 3.10.6 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>http://qastaging.siigo.mx/
+            <div><div><img src="screenshot10-03-2023_08-24-20-568846.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
+            <div><div><video src="videos/4472e8d8ab225db434de7780ab3b902d.webm" poster="presentation.jpg" controls></video></div></div>
+            <div class="log">[gw3] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw3] linux -- Python 3.10.6 /usr/bin/python3[gw3] linux -- Python 3.10.6 /usr/bin/python3[gw3] linux -- Python 3.10.6 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>http://qastaging.siigo.mx/
 QADesplieguePremium001@yopmail.com
 Elemento //*[@id=&#x27;reloadPage&#x27;] NO es visible
 <br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-time">2023-03-09 13:30:20.077586</td>
+          <td class="col-time">2023-03-10 13:24:34.050352</td>
           <td class="col-name">src/test_suites/ui/test_login.py::TestLogin::test_login[testdata1]</td>
           <td>Login app environment qa</td>
-          <td class="col-duration">18.16</td></tr>
+          <td class="col-duration">10.47</td></tr>
         <tr>
           <td class="extra" colspan="5">
-            <div><div><img src="screenshot09-03-2023_08-30-12-621874.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div><div><video src="videos/93f2989bf42ca98b2f45ff9bafd0e3ac.webm" poster="presentation.jpg" controls></video></div></div>
-            <div class="log">[gw2] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw2] linux -- Python 3.10.6 /usr/bin/python3[gw2] linux -- Python 3.10.6 /usr/bin/python3[gw2] linux -- Python 3.10.6 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>http://qastaging.siigo.cl/
+            <div><div><img src="screenshot10-03-2023_08-24-18-434294.png" alt="screenshot" style="width:600px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
+            <div><div><video src="videos/e06c540550d2349f3ad4b656d18fe2e1.webm" poster="presentation.jpg" controls></video></div></div>
+            <div class="log">[gw1] linux -- Python 3.10.6 /usr/bin/python3<br/>[gw1] linux -- Python 3.10.6 /usr/bin/python3[gw1] linux -- Python 3.10.6 /usr/bin/python3[gw1] linux -- Python 3.10.6 /usr/bin/python3<br/> ------------------------------Captured stdout call------------------------------ <br/>http://qastaging.siigo.cl/
 admin@eventos.com
 Elemento //*[@id=&#x27;reloadPage&#x27;] NO es visible
 <br/></div></td></tr></tbody></table></body></html>
